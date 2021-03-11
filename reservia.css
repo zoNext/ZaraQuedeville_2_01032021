@@ -1,0 +1,376 @@
+
+body {
+    margin :0 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+   
+/*
+a appliquer a tous les "a" -- >
+     
+    list-style-type: none;
+*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/***********header********************************************/
+
+header{
+    height: 300px;
+    padding-top: 40px;  /*padding : 40px */
+}
+
+/*************container1*************************************/
+
+.container1{
+    display: flex;  
+    justify-content: flex-start;     
+}
+
+ul{
+    display: flex;  
+    flex-wrap: wrap;
+    /* margin-block-start: 1em; margin : 1em */
+    /*margin-block-end: 1em; */
+}
+
+.element{ 
+    margin-left: auto;  
+}
+
+.topnav{
+/*    color:gray;*/
+    list-style-type: none;
+    font-size: 1.2em; 
+}
+
+.topnav li{
+    padding: 10px 30px; /* padding : 10*/
+}
+
+.topnav a{
+    text-decoration: none;
+    color:gray;
+    /* padding-top: 40px; */
+     padding-top: calc( 40px + 1em + 10px - 1px ); 
+}
+
+
+.topnav :hover{
+    color: blue;    
+}
+
+.topnav li a:hover{
+    border-top:1px solid #0065FC;  
+    padding-top: 50px;
+}
+
+.inscription  a{ 
+    font-weight :bold; 
+    color:blue;
+}
+
+/*-----------------------------------------------*/
+
+.navSearch {
+      display: flex;
+}
+
+.navSearch > i,input { 
+    padding: 17px;
+    outline:none; 
+    flex-basis: auto;
+    border:1px solid #F2F2F2;   
+}
+
+input#Search {
+    color:white;
+    border:1px solid #0065FC;
+    background-color:#0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-weight :bold; 
+    cursor: pointer;  
+}
+
+
+.fa-map-marker-alt{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color:#F2F2F2;
+    
+}
+
+
+/*-----------------------------------------------------------*/
+
+div .filtres{
+    display:flex; 
+    align-items: baseline;
+/*    justify-content: space-between;*/
+    
+}
+
+/*#filtres ul {
+    /* padding: 10px; */
+    /* margin: 5px; *
+  
+}*/
+
+#filtres ul li {
+    list-style-type: none;
+    margin: 10px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    color:black;
+    font-weight :bold; 
+    height: 38px;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 10px;
+   /* padding: 0px 10px 0px 65px; */
+    line-height: 38px;
+    /* width: 40px; */
+    /* text-align: center; */   
+}
+#filtres ul li a {
+    color:black;
+}
+
+#filtres ul li:hover{
+    background-color: #0065FC;
+}
+
+#filtres ul li i {
+    /* padding: 10px; */
+    /* margin-right: 10px;  */
+    background-color: #DEEBFF; 
+    color: #0065FC;
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    border: 2px solid #F2F2F2;
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    line-height: 38px;
+    text-align: center;
+}
+
+
+#info {
+/*    list-style-type: none;*/
+    display: flex;
+    align-items: baseline;
+    color:gray;
+
+}
+
+
+#info i{
+    color: #0065FC;
+   /* background-color: #F2F2F2; */
+    background-color: #F2F2F2;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 20px;
+    padding:3px;
+/*      width: 21px;*/
+    
+}
+
+
+
+
+/****main***************************************/
+
+
+section, aside{
+    background-color:  #F2F2F2;
+    
+}
+
+.hebergement{
+    display: flex;
+    /*    flex-wrap: wrap;*/
+    margin: 0;
+    
+/*    border:1px solid black;*/
+/*    height: 400px;*/
+
+    
+}
+
+#priorite1{
+/*    margin-left: auto;    */
+    border:1px solid #F2F2F2; 
+    flex : 2;
+    padding : 10px 5px 30px;
+    margin:10px;
+    
+    border-radius: 5%;
+}
+#priorite1 h1,h2,h3{
+    margin-left: 20px;
+}
+
+.hotels{
+/*    border: 10px solid yellow;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+/*    height: 100vh;*/
+    margin: 10px 0px;
+}
+
+
+#priorite1 figure{
+    border: 7px solid white;
+    box-sizing:border-box;
+    width: 230px;
+/*    height: 150px;*/
+    overflow: hidden;
+    margin:20px 3px;
+    border-radius: 10%;
+}
+
+figcaption{
+    text-align: justify;
+    background-color: white;
+    padding-top: 5px;
+/*    margin-top: 0;    */
+}
+
+
+
+section figure img{
+    margin: -10px 0px 0px -10px;
+/*
+    border-right-width: 100px;
+    border-bottom-width: 100px;
+*/
+/*    padding: 10px;*/
+    width: 230px;
+    height: 110px;
+    overflow: hidden;
+}
+
+
+
+.comment1{
+    font-weight: bold;
+}
+
+figcaption i{
+    color:#0065FC;
+}
+
+/*
+.hotel1 i:last-of-type {
+    color:slategray;
+}
+*/
+
+.hotel1 i:nth-child(5) {
+/*    color:#F2F2F2;*/
+    color:slategray;
+}
+
+
+/*
+.hotel4 i:last-of-type ,.hotel4 i:nth-last-of-type(2){
+    color:#F2F2F2;
+    color:slategray;
+}
+*/
+
+.hotel4 i:nth-child(n+4){
+    color:slategray;
+}
+
+/*aside************************/
+#priorite2{
+   
+    flex : 1;
+    border:1px solid #F2F2F2; 
+    padding : 20px 30px 20px;
+    margin:10px;
+    border-radius: 5%;
+}
+
+#priorite2 h2{
+    
+    
+}
+
+.fa-chart-line {
+    float: right;
+    margin-top: 0;
+}
+
+aside figure img{
+    margin: -10px 0px 0px -10px;
+/*
+    border-right-width: 100px;
+    border-bottom-width: 100px;
+*/
+/*    padding: 10px;*/
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#priorite2 figure{
+    display:flex;
+    border: 7px solid white;
+    box-sizing:border-box;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+    margin:20px 0px;
+    border-radius: 10%;
+}
+
+
+.figComment{
+    margin: 0 0 0 5px;
+    background-color: white;
+    width: 250px;
+}
+
+
+/*
+#priorite2 figure{
+    border: 7px solid white;
+    box-sizing:border-box;
+    width: 350px;
+    height: 150px;
+    overflow: hidden;
+    margin:20px 3px;
+    border-radius: 10%;
+}
+*/
+
+figcaption{
+/*
+    text-align: justify;
+    background-color: white;
+    padding-top: 5px;
+*/
+/*    margin-top: 0;    */
+}
+
+.comment3{
+    padding-top: 30px;
+}
+/*footer******************************************************/
+
+footer{
+     background-color:  #F2F2F2;
+}
