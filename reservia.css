@@ -1,6 +1,6 @@
 
 body {
-    margin :0 50px;
+    margin :10 30px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
    
@@ -18,8 +18,9 @@ a {
 /***********header********************************************/
 
 header{
-    height: 300px;
-    padding-top: 40px;  /*padding : 40px */
+/*    height: 300px;*/
+/*    padding-top: 40px;  */
+    padding : 20px  
 }
 
 /*************container1*************************************/
@@ -188,7 +189,7 @@ div .filtres{
 
 
 
-/****main***************************************/
+/****main : section + aside ***************************************/
 
 
 section, aside{
@@ -200,75 +201,105 @@ section, aside{
     display: flex;
     /*    flex-wrap: wrap;*/
     margin: 0;
-    
-/*    border:1px solid black;*/
-/*    height: 400px;*/
-
-    
 }
 
-#priorite1{
+#hebergement{
 /*    margin-left: auto;    */
     border:1px solid #F2F2F2; 
     flex : 2;
-    padding : 10px 5px 30px;
+    padding : 10px 20px;
     margin:10px;
     
     border-radius: 5%;
 }
-#priorite1 h1,h2,h3{
-    margin-left: 20px;
+
+
+#hebergement h1,h2{
+    margin-left: 15px;
 }
 
-.hotels{
+
+#hotel{
 /*    border: 10px solid yellow;*/
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
 /*    height: 100vh;*/
-    margin: 10px 0px;
+/*    margin: 10px 0px;*/
+/*    overflow: hidden;*/
 }
 
 
-#priorite1 figure{
+section figure{
     border: 7px solid white;
     box-sizing:border-box;
-    width: 230px;
+    width: 31%;
 /*    height: 150px;*/
     overflow: hidden;
-    margin:20px 3px;
+    margin:20px 5px;
     border-radius: 10%;
-}
-
-figcaption{
-    text-align: justify;
     background-color: white;
-    padding-top: 5px;
-/*    margin-top: 0;    */
 }
 
-
-
-section figure img{
-    margin: -10px 0px 0px -10px;
-/*
-    border-right-width: 100px;
-    border-bottom-width: 100px;
-*/
-/*    padding: 10px;*/
-    width: 230px;
+#hotel div{ /* proprietes communes aux images*/
+    width: 100%;
     height: 110px;
-    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+#choix1{
+/*    overflow: hidden;*/
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+/*
+    object-fit: cover;
+    object-position: center;
+*/
+}
+
+#choix2{
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+#choix3{
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+#choix4{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+#choix5{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+#choix6{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
 
 
-.comment1{
-    font-weight: bold;
+
+    
+section figcaption{
+    text-align: left;
+/*    background-color: white;*/
+    padding-left: 10px;
+    height: 100px;
+    font-size: 0.9em;
+    margin:0;
+/*    width: 150px;*/
+/*    margin-top: 0;    */
+/*    color:#0065FC;*/
+/*    margin-bottom: 25px;*/
 }
 
-figcaption i{
+
+.fa-star{
     color:#0065FC;
+    margin-bottom: 25px;
 }
 
 /*
@@ -277,10 +308,23 @@ figcaption i{
 }
 */
 
-.hotel1 i:nth-child(5) {
+.hotel4etoiles i:nth-child(5){
 /*    color:#F2F2F2;*/
     color:slategray;
 }
+
+/*
+.4etoiles i:last-of-type {
+    color:slategray;
+}
+*/
+
+/*
+.hotel4etoiles i:last-of-type {
+    color:slategray;
+}
+*/
+
 
 
 /*
@@ -290,60 +334,108 @@ figcaption i{
 }
 */
 
-.hotel4 i:nth-child(n+4){
+.hotel3etoiles i:nth-child(n+4){
     color:slategray;
 }
 
 /*aside************************/
-#priorite2{
+aside{
    
     flex : 1;
     border:1px solid #F2F2F2; 
     padding : 20px 30px 20px;
-    margin:10px;
+    margin: 10px 20px 10px 30px;
     border-radius: 5%;
 }
 
-#priorite2 h2{
-    
-    
+aside figure{
+    border: 7px solid white;
+    box-sizing:border-box;
+    width: 31%;
+/*    height: 150px;*/
+    overflow: hidden;
+    margin:10px 15px;
+    border-radius: 10%;
+    background-color: white;
 }
+
 
 .fa-chart-line {
     float: right;
     margin-top: 0;
 }
 
-aside figure img{
-    margin: -10px 0px 0px -10px;
-/*
-    border-right-width: 100px;
-    border-bottom-width: 100px;
-*/
-/*    padding: 10px;*/
-    width: 250px;
-    height: 150px;
-    overflow: hidden;
+#hotelpop{
+    
+    margin:15px 30px;    
+   
+    
 }
 
-#priorite2 figure{
+#hotelpop div{ /* proprietes communes aux images*/
+    height: 100%;
+    width: 150px;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+#choix7{
+/*
+    height: 100%;
+    width: 130px;
+*/
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+/*
+    background-position: center;
+    background-size: cover;
+*/
+}
+
+#choix8{
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+#choix9{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+
+aside figure{
     display:flex;
     border: 7px solid white;
     box-sizing:border-box;
-    width: 350px;
-    height: 150px;
+/*    width: 350px;*/
+    width:100%;
+    height: 180px;
     overflow: hidden;
-    margin:20px 0px;
+/*    margin:30px 5px;    */
     border-radius: 10%;
+    margin: 30px 5px 30px 0px;
 }
 
 
-.figComment{
-    margin: 0 0 0 5px;
-    background-color: white;
-    width: 250px;
+aside figcaption{
+/*    display: flex;*/
+/*    flex-direction: column;*/
+    margin: 0 20px 0 20px;    
+    font-size: 0.9em;
+    width: 150px;
 }
 
+/*aside figcaption :nth-child(2){*/
+
+aside figcaption :last-child{
+    margin-top: 25px;
+/*     justify-self: end;*/
+/*    margin-top: 20px;*/
+/*    justify-content: flex-end;*/
+     
+/*    padding-bottom: auto;*/
+/*    line-height: 200%;*/
+/*    position:absolute;*/
+}
 
 /*
 #priorite2 figure{
@@ -357,18 +449,6 @@ aside figure img{
 }
 */
 
-figcaption{
-/*
-    text-align: justify;
-    background-color: white;
-    padding-top: 5px;
-*/
-/*    margin-top: 0;    */
-}
-
-.comment3{
-    padding-top: 30px;
-}
 /*footer******************************************************/
 
 footer{
