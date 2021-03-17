@@ -521,24 +521,15 @@ aside figcaption :last-child{
     margin-bottom: 0px;
 }
 
-.wrapper{
-    border: 1px solid red;
-    margin:0 10px;
-    display: flex;
-        height: 500px;
-/*    overflow: visible;*/
-    justify-content:space-around;
-/*    padding: 30px 20px;*/
-    padding-bottom: 50px;
 
-}
 
 
 #activites figure{
-        
+  
 /*    border: 7px solid white;*/
     box-sizing:border-box;
-        
+   
+/*      flex-wrap: wrap;       */
     height: 100%;
 /*    width: 290px;*/
 /*    width:50%;*/
@@ -554,9 +545,22 @@ aside figcaption :last-child{
     box-shadow: 0px 0px 10px #aaa; 
 }
 
+.wrapper{
+/*    border: 1px solid red;*/
+    margin:0 10px;
+    display: flex;
+    flex-wrap:wrap;
+        height: 500px;
+/*    overflow: visible;*/
+    justify-content:space-around;
+/*    padding: 30px 20px;*/
+    padding-bottom: 50px;
+
+}
 
 .colom{
     height: 100%;
+    flex: 1 1 300px;
 /*    width: 100%;*/
     width: 25%;
     margin: 0px 0px 10px; 
@@ -576,7 +580,7 @@ aside figcaption :last-child{
 }
 .col-4{
 /*    height:104%;*/
-    height: 104%;
+    height: 103%;
 }
 
 
@@ -592,7 +596,7 @@ aside figcaption :last-child{
 }
 
 #choix10{
-    height: 85%;
+    height: 90%;
     background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -600,7 +604,7 @@ aside figcaption :last-child{
 
 
 #choix11{
-    height: 80%;
+    height: 85%;
     background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -609,7 +613,8 @@ aside figcaption :last-child{
 
 #choix12{
     height: 100px;
-    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+/*    height: 80%;*/
+    background-image: url(images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-position: center;
     background-size: cover;
 }
