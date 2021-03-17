@@ -63,8 +63,8 @@ ul{
     color: blue;    
 }
 
-.topnav li a:hover{
-    border-top:1px solid #0065FC;  
+.topnav li:nth-child(-n+2) a:hover{
+    border-top:2px solid #0065FC;  
     padding-top: 50px;
 }
 
@@ -192,14 +192,15 @@ div .filtres{
 /****main : section + aside ***************************************/
 
 
-section, aside{
+#hebergement, aside{
     background-color:  #F2F2F2;
     
 }
 
 .hebergement{
     display: flex;
-    /*    flex-wrap: wrap;*/
+    flex-wrap: wrap-reverse;
+    
     margin: 0;
 }
 
@@ -207,17 +208,32 @@ section, aside{
 /*    margin-left: auto;    */
     border:1px solid #F2F2F2; 
     flex : 2;
+/*    flex: 0 0 30%;*/
+/*    flex-wrap: wrap;*/
+/*
+    flex-flow: column wrap;
+    width:40%;
+*/
     padding : 10px 20px;
+/*    padding : 0px 10px;*/
     margin:10px;
     
-    border-radius: 5%;
+/*    border-radius: 5%;*/
+    
+    border-radius: 35px;
+    
 }
 
 
-#hebergement h1,h2{
-    margin-left: 15px;
+section h2{
+/*    margin-left: 15px;*/
+    padding: 20px 30px;
 }
 
+section>h3{
+    padding-top:15px;
+    padding-left: 15px;
+}
 
 #hotel{
 /*    border: 10px solid yellow;*/
@@ -229,28 +245,45 @@ section, aside{
 /*    overflow: hidden;*/
 }
 
+/*section figure{*/
 
-section figure{
+#hebergement figure{    
     border: 7px solid white;
     box-sizing:border-box;
-    width: 31%;
-/*    height: 150px;*/
+    width: 28%;    
+/*    max-width: 28%;*/
+    flex: 1 0 200px;
     overflow: hidden;
-    margin:20px 5px;
-    border-radius: 10%;
+
+/*    min-width: 200px;*/  
+
+/*    height: 150px;*/  
+    margin:20px;
+    border-radius: 25px;
     background-color: white;
+    box-shadow: 0px 0px 10px #aaa; 
 }
+
+
+/*
+a figure:hover{
+    color: red;
+    background-image:url(images/gris_anim.gif);
+    background-repeat:no-repeat;
+}
+*/
 
 #hotel div{ /* proprietes communes aux images*/
     width: 100%;
     height: 110px;
     background-position: center;
     background-size: cover;
+/*    flex: 1 1 0;*/
 }
 
 #choix1{
 /*    overflow: hidden;*/
-    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
     background-position: center;
     background-size: cover;
 /*
@@ -260,40 +293,88 @@ section figure{
 }
 
 #choix2{
-    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 
 #choix3{
-    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 
 #choix4{
-    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 
 #choix5{
-    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 
 #choix6{
-    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 
 
 
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix1{
+    background-image: url(images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix2{
+    background-image: url(images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix3{
+    background-image: url(images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix4{
+    background-image: url(images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix5{
+    background-image: url(images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    #choix6{
+    background-image: url(images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    }
+}
+
+
+    
+
+/*
+a:hover{
+    color: red;
+    background-image:url(images/gris_anim.gif);
+    background-repeat:no-repeat;
+}
+*/
 
     
 section figcaption{
     text-align: left;
-/*    background-color: white;*/
     padding-left: 10px;
-    height: 100px;
+/*    height: 100px;*/
     font-size: 0.9em;
     margin:0;
+    color:black;    
 /*    width: 150px;*/
 /*    margin-top: 0;    */
 /*    color:#0065FC;*/
 /*    margin-bottom: 25px;*/
+    
 }
 
 
@@ -340,36 +421,49 @@ section figcaption{
 
 /*aside************************/
 aside{
-   
+    
     flex : 1;
     border:1px solid #F2F2F2; 
-    padding : 20px 30px 20px;
+/*    padding : 20px 30px 20px;*/
     margin: 10px 20px 10px 30px;
-    border-radius: 5%;
+    border-radius: 35px;
+}
+
+aside h2{
+/*    margin-left: 25px;*/
+    padding: 20px 35px;
 }
 
 aside figure{
+    display:flex;
     border: 7px solid white;
     box-sizing:border-box;
-    width: 31%;
-/*    height: 150px;*/
+/*    width:100%;*/
+    height: 180px;
     overflow: hidden;
-    margin:10px 15px;
-    border-radius: 10%;
+    border-radius: 20px;
     background-color: white;
+/*    margin: 30px 5px 30px 0px;*/
+    margin:30px 0px;  
+    box-shadow: 0px 0px 10px #aaa; 
+    color:black;
 }
+
+/*
+aside figure:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+*/
 
 
 .fa-chart-line {
     float: right;
     margin-top: 0;
+    margin-right: 40px;
 }
 
-#hotelpop{
-    
-    margin:15px 30px;    
-   
-    
+#hotelpop{   
+    margin:15px 30px;        
 }
 
 #hotelpop div{ /* proprietes communes aux images*/
@@ -377,6 +471,7 @@ aside figure{
     width: 150px;
     background-position: center;
     background-size: cover;
+    flex: 1 1 0;
     
 }
 
@@ -386,7 +481,7 @@ aside figure{
     height: 100%;
     width: 130px;
 */
-    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 /*
     background-position: center;
     background-size: cover;
@@ -394,25 +489,11 @@ aside figure{
 }
 
 #choix8{
-    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
 
 #choix9{
-    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
-}
-
-
-aside figure{
-    display:flex;
-    border: 7px solid white;
-    box-sizing:border-box;
-/*    width: 350px;*/
-    width:100%;
-    height: 180px;
-    overflow: hidden;
-/*    margin:30px 5px;    */
-    border-radius: 10%;
-    margin: 30px 5px 30px 0px;
+    background-image: url(images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 
@@ -422,35 +503,149 @@ aside figcaption{
     margin: 0 20px 0 20px;    
     font-size: 0.9em;
     width: 150px;
+    flex: 1 1 0;
 }
 
 /*aside figcaption :nth-child(2){*/
 
 aside figcaption :last-child{
     margin-top: 25px;
-/*     justify-self: end;*/
-/*    margin-top: 20px;*/
-/*    justify-content: flex-end;*/
-     
-/*    padding-bottom: auto;*/
-/*    line-height: 200%;*/
-/*    position:absolute;*/
 }
 
-/*
-#priorite2 figure{
-    border: 7px solid white;
+
+
+/***************SECTION ACTIVITES**************/
+
+#activites>h2{
+    padding: 20px 30px 0px;
+    margin-bottom: 0px;
+}
+
+.wrapper{
+    border: 1px solid red;
+    margin:0 10px;
+    display: flex;
+        height: 500px;
+/*    overflow: visible;*/
+    justify-content:space-around;
+/*    padding: 30px 20px;*/
+    padding-bottom: 50px;
+
+}
+
+
+#activites figure{
+        
+/*    border: 7px solid white;*/
     box-sizing:border-box;
-    width: 350px;
-    height: 150px;
+        
+    height: 100%;
+/*    width: 290px;*/
+/*    width:50%;*/
+/*    height: 500px;*/
+/*  width: 80%;*/
+/*    width: 100%; */
+/*    height: 180px;*/
+/*    flex: 1 0 200px;*/
     overflow: hidden;
-    margin:20px 3px;
-    border-radius: 10%;
+    margin:30px 20px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 10px #aaa; 
+}
+
+
+.colom{
+    height: 100%;
+/*    width: 100%;*/
+    width: 25%;
+    margin: 0px 0px 10px; 
+
+}
+     
+}
+
+.col-1{
+    height:35%;
+}
+.col-2{
+    height:49%;
+}
+.col-3{
+    height:65%;
+}
+.col-4{
+/*    height:104%;*/
+    height: 104%;
+}
+
+
+
+.wrapper figure div{ /* proprietes communes aux images*/
+/*    width: 100%;*/
+/*height: 80%;*/
+/*              height: 700px;*/
+    background-position: center;
+    background-size: cover;
+/*    flex: 1 1 0;*/
+    
+}
+
+#choix10{
+    height: 85%;
+    background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#choix11{
+    height: 80%;
+    background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#choix12{
+    height: 100px;
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#choix13{
+    height: 90%;
+    background-image: url(images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#choix14{
+    height: 80%;
+    background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#choix15{
+    height: 80%;
+    background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
 }
 */
+
+
+
+
+
+
+
 
 /*footer******************************************************/
 
 footer{
      background-color:  #F2F2F2;
+        
 }
