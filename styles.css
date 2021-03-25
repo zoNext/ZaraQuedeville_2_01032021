@@ -14,7 +14,10 @@ a appliquer a tous les "a" -- >
 
 a {
     text-decoration: none;
+    color: blue;
+
 }
+
 
 /***********header********************************************/
 
@@ -28,7 +31,8 @@ header{
 /*************container1*************************************/
 
 .container1{
-    display: flex;  
+    display: flex;
+    align-items: baseline;
 /*    justify-content: flex-start;     */
 /*    flex-flow: column wrap;*/
 /*
@@ -37,28 +41,36 @@ header{
 */
 }
 
-#elementlogo{
-    
+/*
+#elementlogo{   
    /*    height: 100px;*/
 /*
     background-image: url(images/logo/Reservia.svg);
     background-repeat: no-repeat;
     background-position: center;
 */
+/*
     width:100px;
-    background: url(images/logo/Reservia.svg) no-repeat center;
-    
+    background: url(images/logo/Reservia.svg) no-repeat center; 
+
 }
+*/
 
 ul{
     display: flex;  
     flex-wrap: wrap;
-    /* margin-block-start: 1em; margin : 1em */
-    /*margin-block-end: 1em; */
+}
+
+.elementlogo{
+    padding-top: 10px;
 }
 
 .element{ 
-    margin-left: auto;  
+    display: flex;  
+    margin-left: auto;
+   
+/*    order:2;*/
+/*    flex-wrap: wrap;*/
 }
 
 .topnav{
@@ -95,13 +107,19 @@ ul{
     align-self: flex-end;
     order:1;
 */
-    
+/*    padding-top : 51px;*/
+    font-weight :bold; 
+    color: blue;
+    font-size: 1.2em; 
+    padding: 10px 30px;
 }
+/*
 .inscription  a{ 
     font-weight :bold; 
     color:blue;
     
 }
+*/
 
 /*-----------------------------------------------*/
 
@@ -134,11 +152,13 @@ input#Search {
     
 }
 
+ 
+
 
 /*-----------------------------------------------------------*/
 
 div .filtres{
-    display:flex; 
+/*    display:flex; */
     align-items: baseline;
 /*    justify-content: space-between;*/
     
@@ -224,6 +244,8 @@ main{
     margin: 0 10px;
 /*    border:1px solid red;*/
     padding: 0 20px;
+    
+    flex-direction: column;
 }
 
 
@@ -234,9 +256,18 @@ main{
 
 .hebergement{
     display: flex;
-    flex-wrap: wrap-reverse; 
+/*    flex-wrap: wrap-reverse; */
 /*    margin: 0 20px;*/
 }
+
+/* modif*/
+.hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column-reversec;
+/*    margin: 0 20px;*/
+}
+
 
 #hebergement{
 /*    margin-left: auto;    */
@@ -489,7 +520,7 @@ aside figure:hover{
 .fa-chart-line {
     float: right;
     margin-top: 0;
-    margin-right: 40px;
+    margin-right: 0px;
 }
 
 #hotelpop{   
@@ -584,6 +615,7 @@ section h2{
 /*    border: 1px solid red;*/
     margin:0 10px;
     display: flex;
+  
     flex-wrap:wrap;
     height: 500px;
 /*    overflow: visible;*/
@@ -594,6 +626,9 @@ section h2{
 
 }
 
+
+
+
 .column{
    height: 100%;
    width: 22%;
@@ -602,14 +637,14 @@ section h2{
    justify-content: space-between;
    
 }
-     
-}
+
+  
 
 .col-1{
-    height:35%;
+    height:34%;
 }
 .col-2{
-    height:45%;
+    height:47%;
 }
 .col-3{
     height:60%;
@@ -625,8 +660,9 @@ section h2{
 }
 
 .wrapper figure div{ /* proprietes communes aux images*/
-    width: 100%;
+/*    width: 100%;*/
     height: calc( 100% - 50px );
+/*    height: 300px;*/
 /*height: 80%;*/
 /*              height: 700px;*/
     background-position: center;
@@ -673,8 +709,8 @@ section h2{
 
 #choix12{
 /*    height: calc( 100% - 50px );*/
-    height: 160px;
 /*    width: 100%;*/
+/*    height: 160px;*/
     background-image: url(images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 /*
     background-position: center;
@@ -712,9 +748,11 @@ section h2{
 */
 }
 
+/*
 figure:hover{
      transform: scale(1.05);
 }
+*/
 
 /*footer******************************************************/
 
@@ -733,4 +771,126 @@ footer div{
 /*    border:1px solid black;*/
     flex:1 1 300px;
 /*    padding-left: 10px;*/
+}
+
+
+
+
+@media all and (max-width: 1024px){
+    
+
+        
+    .container1{ 
+        position:relative;
+        height: 150px;
+/*
+        margin: 10px;
+        padding: 0px;
+*/
+    }
+    
+     .element{
+        position:absolute;
+        top:30px;
+         order:2;
+        padding-bottom:20px;
+        
+    }
+    .topnav{
+        margin-top:30px;
+        padding:20px;
+    }
+    .topnav li:nth-child(-n+2) a:hover{
+        border-top:none;  
+/*        border-top:2px solid white;  */
+       border-bottom:2px solid #0065FC;  
+       padding-bottom: 10px;
+        
+}
+    
+    
+    .inscription{
+        margin : 0;
+        padding: 0px;
+         margin-left:80px;
+/*
+        margin-top: 0;
+        padding-left: 50px;
+        padding-bottom: 20px;
+*/
+    }
+    
+    .elementlogo{
+/*        box-sizing: border-box;*/
+        margin-left:0px;
+        margin-top: 10px;
+        padding-right: 150px;
+    }
+   
+    
+    
+    container1 h2{
+        padding: 10px;
+    }
+    
+/*    .container1 nav{*/
+    
+    #Search{
+        display: none;
+        background-image: url(fas fa-search);
+/*        <i class="fas fa-search"></i>;*/
+    }
+    
+    .fa-search{
+        color:white;
+        border:1px solid #0065FC;
+        background-color:#0065FC;
+/*
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+*/
+        border-radius: 15px;
+        font-weight :bold; 
+/*        cursor: pointer;  */
+        padding: 17px;
+        outline:none; 
+        flex-basis: auto;
+        border:1px solid #F2F2F2;
+    }
+    
+    header{
+        padding: 0 30px;
+    }
+  
+    div filtres{
+        flex: none;
+    }
+    
+    .filtres h2{
+                
+        max-width: 100%;
+
+/*        display: inline-block;*/
+/*        width: 100%;*/
+/*       flex-grow: 4;*/
+/*        width: auto;*/
+/*        margin: 10px auto auto;*/
+/*        vertical-align: top;*/
+        
+/*        padding: 0;*/
+    }
+    
+        /*
+            .filtres li{
+                flex-grow: 1;
+        }
+        */
+
+
+@media screen and (min-width: 1024px){
+    
+    span .fa-search{
+        display: none;
+    }
+    
 }
