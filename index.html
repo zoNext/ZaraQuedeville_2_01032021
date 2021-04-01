@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+<!--  viewport pour s'adapter le niveau de zoom au navigateur mobile(peripherique))-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquette Reservia</title>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" href="styles.css">  
@@ -9,61 +12,36 @@
      <!--load all styles -->
 </head>
 <body>
-<!-------------------------------header--------------------------------->
+<!-----------------------header--------------------------------->
    <header>             
     <div class="container1">
-<!--       <div id="elementlogo"></div>-->
-              
-                   
-                <div>
-                    <img src="images/logo/Reservia.svg" alt="Site logo" class="elementlogo">       
-                </div>
-                <nav class="element">      
-                    <ul class ="topnav">
-                            <li><a href="#main">Hébergement</a></li>
-                            <li><a href="#activites">Activités</a></li>     
-        <!--
-                    <li><a href="#">Hébergements</a></li>
-                    <li><a href="#">Activités</a></li>
-        -->
-                    </ul> 
-                </nav>                       
-               
-               <div class="inscription"><a href="#inscription">S'inscrire</a>
-                </div> 
-       
+<!--       <div id="elementlogo"></div>-->       
+        <div class="headerlogo">
+            <img src="images/logo/Reservia.svg" alt="Site logo" class="elementlogo">   
+            <div class="mobile inscription"><a href="#inscription">S'inscrire</a>
+            </div> 
         </div>
-    
-         <div>
-             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-               <p>En plein centre de ville ou en pleine nature</p>
-         </div>
-    
-    
-    
-<!--    test-------------------------------------------->
-   
-<!--
-   <div class="container1">
-       <div id="elementlogo"></div>
-        <img src="images/logo/Reservia.svg" alt="Site logo" class="elementlogo">  
-
-        <nav class="element">    
-          <ul class ="topnav">
-            <li><a href="#main">Hébergement</a></li>
-           <li><a href="#activites">Activités</a></li>      
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-            <li class="inscription"><a href="#inscription">S'inscrire</a></li>
-          </ul>
-        </nav>
+        <nav class="element">      
+            <ul class ="topnav">
+                <li><a href="#main">Hébergement</a></li>
+                <li><a href="#activites">Activités</a></li>
+<!--  Quand on est en dessous d'une certaine taille la classe desktop est masquee et audessus de la taille en question la class mobile est masquee-->
+                <li class="desktop inscription"><a href="#inscription">S'inscrire</a></li>  
+    <!--
+                <li><a href="#">Hébergements</a></li>
+                <li><a href="#">Activités</a></li>
+    -->
+            </ul> 
+        </nav>                        
     </div>
     
-    <div>
+     <div>
          <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
            <p>En plein centre de ville ou en pleine nature</p>
      </div>
--->
+    
+    
+    
     
 <!--    --------------------navSearch -------------------------->
 
@@ -71,7 +49,7 @@
        <i class="fas fa-map-marker-alt"></i>
        <input type="text" value="Marseille, France">
        <input type="submit" value="Rechercher" id="Search"/>
-       <Span><i class="fas fa-search"></i></Span>
+       <Span class="mobile"><i class="fas fa-search"></i></Span>
 <!--       <input type="submit" value="Rechercher" id="iconSearch"/>-->
     </div>
 <!--    --------------------------------------------------->
@@ -79,7 +57,7 @@
     <div id="filtres">   
             
         <div class="filtres">
-           <h2>Filtres</h2>
+           <h3>Filtres</h3>
            <ul>                   
                 <li><i class="fas fa-money-bill-wave"></i><a href="#">Economique</a></li>
                 <li><i class="fas fa-child"></i><a href="#">Familial</a></li>

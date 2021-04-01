@@ -4,18 +4,11 @@ body {
 
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-   
-/*
-a appliquer a tous les "a" -- >
-     
-    list-style-type: none;
-*/
 }
 
 a {
     text-decoration: none;
     color: blue;
-
 }
 
 
@@ -25,64 +18,107 @@ header{
 /*    height: 300px;*/
 /*    padding-top: 40px;  */
 /*    padding : 20px  */
-    padding : 0 40px;
+   padding : 0 40px; /* ?*/
+/*    padding: 0 30px; ??????????????????*/
 }
 
 /*************container1*************************************/
 
 .container1{
     display: flex;
-    align-items: baseline;
+/*    align-items: baseline;*/
+    align-items: center;
 /*    justify-content: flex-start;     */
 /*    flex-flow: column wrap;*/
-/*
-    flex-direction: row;
-    flex-wrap: wrap;
-*/
-}
-
-/*
-#elementlogo{   
-   /*    height: 100px;*/
-/*
-    background-image: url(images/logo/Reservia.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-*/
-/*
-    width:100px;
-    background: url(images/logo/Reservia.svg) no-repeat center; 
-
-}
-*/
-
-ul{
-    display: flex;  
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .elementlogo{
     padding-top: 10px;
 }
 
-.element{ 
-    display: flex;  
-    margin-left: auto;
-   
-/*    order:2;*/
-/*    flex-wrap: wrap;*/
+/*=============================================================*/
+/*la div avec deux elements (logo + inscription) pour mieux les gerer*/
+/*
+.headerlogo{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    width: 100%;
 }
+*/
+
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
+.elementlogo{
+    padding-top: 10px;
+/*    padding-top: 20px;?????????????????*/
+}
+
+/*
+#elementlogo{   
+    height: 100px;    
+    background-image: url(images/logo/Reservia.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+*/
+
+/*
+    width:100px;
+    background: url(images/logo/Reservia.svg) no-repeat center; 
+}
+*/
+
+/*====================================================*/
+/********************* nav**************************/
+
+.element{ 
+/*    display: flex;  */
+/*    margin: auto;*/
+/*    flex-wrap: wrap;*/
+    width: 50%;
+/*     width: 100%; mobile*/
+}
+
+ul{
+    display: flex;  
+/*    flex-wrap: wrap;*/
+/*    margin:0;*/
+/*    padding: 0;*/
+    padding: 0 20px;
+}
+
 
 .topnav{
 /*    color:gray;*/
     list-style-type: none;
     font-size: 1.2em; 
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-left: 90px;
+/*    width: 100%;*/
 }
 
 .topnav li{
-    padding: 10px 30px; /* padding : 10*/
+/*    padding: 10px 30px;  padding : 10*/
 /*    justify-self: end;*/
+/*    text-align: center;*/
+/*
+    border-bottom: 2px solid #2f2f2f;
+    padding-bottom: 10px;
+*/
+    
+    padding: 10px 40px;
+    /* justify-self: end; */
+/*    width: 50%;    */
+    text-align: center;
+/*    border-top: 2px solid #0065FC;*/
+    padding-bottom: 10px;
 }
 
 .topnav a{
@@ -97,41 +133,56 @@ ul{
     color: blue;    
 }
 
-.topnav li:nth-child(-n+2) a:hover{
-    border-top:2px solid #0065FC;  
+/*@media screen and (min-width: 768px) and (max-width:1024px)s*/
+    .topnav li:nth-child(-n+2) a:hover{
+        border-top:2px solid #0065FC;  
+        padding-top: 50px;
+    }
+
+
+/*
+.topnav li a:hover{
+    border-top:1px solid #0065FC;  
     padding-top: 50px;
 }
+*/
 
 .inscription{
 /*
-    align-self: flex-end;
-    order:1;
+    align-self: flex-end;    
 */
-/*    padding-top : 51px;*/
-    font-weight :bold; 
-    color: blue;
-    font-size: 1.2em; 
-    padding: 10px 30px;
-}
-/*
-.inscription  a{ 
-    font-weight :bold; 
-    color:blue;
     
+    font-weight :bold; 
+/*    color: blue;*/
+    font-size: 1.2em; 
+/*    padding: 10px 30px;*/
 }
-*/
 
-/*-----------------------------------------------*/
+
+
+
+/*============================================================*/
+/*--------------------navSearch---------------------------*/
 
 .navSearch {
-      display: flex;
+    display: inline-block;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+/*    width: 90%;*/
+    border-left: none;
+    border-right: none;
+/*    margin:auto;*/
+   
+    position:relative;
+/*    padding-right: 120px;*/
 }
 
 .navSearch > i,input { 
     padding: 17px;
     outline:none; 
     flex-basis: auto;
-    border:1px solid #F2F2F2;   
+    border:1px solid #F2F2F2;  
+    border:none;
 }
 
 input#Search {
@@ -141,7 +192,12 @@ input#Search {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight :bold; 
-    cursor: pointer;  
+    cursor: pointer; 
+/*    float: left;*/
+    display: inline-block;
+/*    display: none;*/
+    position:absolute;
+    width:120px;
 }
 
 
@@ -158,8 +214,9 @@ input#Search {
 /*-----------------------------------------------------------*/
 
 div .filtres{
-/*    display:flex; */
+    display:flex; 
     align-items: baseline;
+    flex-wrap: wrap;
 /*    justify-content: space-between;*/
     
 }
@@ -186,6 +243,7 @@ div .filtres{
     /* width: 40px; */
     /* text-align: center; */   
 }
+
 #filtres ul li a {
     color:black;
 }
@@ -231,10 +289,15 @@ div .filtres{
     height: 18px;
     text-align: center;
     line-height: 20px;
-    padding:3px;
+    padding:5px;
 /*      width: 21px;*/
     
 }
+
+
+
+
+
 
 
 
@@ -254,17 +317,12 @@ main{
     
 }
 
-.hebergement{
-    display: flex;
-/*    flex-wrap: wrap-reverse; */
-/*    margin: 0 20px;*/
-}
-
 /* modif*/
 .hebergement{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction:column-reversec;
+/*    flex-wrap: wrap;*/
+    flex-wrap: wrap-reverse;
+/*    flex-direction:column-reverse;*/
 /*    margin: 0 20px;*/
 }
 
@@ -561,7 +619,7 @@ aside figure:hover{
 aside figcaption{
 /*    display: flex;*/
 /*    flex-direction: column;*/
-    margin: 0 20px 0 20px;    
+    margin: 0 10px;    
     font-size: 0.9em;
     width: 150px;
     flex: 1 1 0;
@@ -610,6 +668,8 @@ section h2{
     margin: 0;
      
 }
+
+
 
 .wrapper{
 /*    border: 1px solid red;*/
@@ -772,85 +832,183 @@ footer div{
     flex:1 1 300px;
 /*    padding-left: 10px;*/
 }
+.mobile {
+/*    display: none;*/
+}
+.desktop {
+    display: block;
+}
 
+
+
+
+
+
+
+
+
+/********************************************************/
+/*=============version smartphone====================*/
+/*version smartphone : 320px till 768px*/
+
+/*certaines corrections vont de telle taille (min-width) a telle taille (max-width)*/
+
+/*=================================================*/
 
 
 
 @media all and (max-width: 1024px){
     
-
-        
+    body {
+    margin :0px;
+    }
+    
+/*    la classe mobile est visible en dessous de 1024px et prends ces proprietes */
+    .mobile {
+/*        display: block;*/
+        display: inline-block;
+        float: right;
+    }   
+/*    la classe desktop sera masquee en dessous de 1024px*/
+    .desktop {
+        display: none;
+    }       
+    .elementlogo {
+    /* box-sizing: border-box; */
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-right: 0;
+    }        
     .container1{ 
-        position:relative;
-        height: 150px;
+        flex-wrap: wrap;
 /*
         margin: 10px;
         padding: 0px;
 */
+    }  
+    .element {
+/* width: 100%;  notre conteneur fait toute la largeur*/
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom:10px;
+        margin-left:5px;
     }
     
-     .element{
-        position:absolute;
-        top:30px;
-         order:2;
-        padding-bottom:20px;
-        
+    .topnav {
+        margin-top: 30px;
+        padding: 0;   
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
     }
-    .topnav{
-        margin-top:30px;
-        padding:20px;
+
+    
+    .topnav li{
+        padding:0;
+        /* justify-self: end; */
+        width: 50%;
+        /* width: 25%;    */
+        text-align: center;
+        /*    border-bottom: 2px solid #0065FC;*/
+        /*    border-bottom: 2px solid #2f2f2f;*/
+        border-bottom: 2px solid gray;
+        padding-bottom: 10px;
+/*        border-top:none;*/
     }
+    
+    .topnav li:nth-child(-n+2) a:hover {
+        border-top:none;
+/*        border-top-color: white;*/
+    }
+    
+/*
     .topnav li:nth-child(-n+2) a:hover{
+        border-top:2px solid #0065FC;  
+        padding-top: 50px;
+    }
+*/
+    
+    .topnav li:hover{
+        border-bottom-color: blue;
+        border-top:none;
+/*
         border-top:none;  
-/*        border-top:2px solid white;  */
        border-bottom:2px solid #0065FC;  
        padding-bottom: 10px;
-        
-}
-    
-    
+*/        
+    }    
     .inscription{
-        margin : 0;
-        padding: 0px;
-         margin-left:80px;
+/*        margin : 0;*/
+/*        padding: 20px;*/
+        margin-left:0px;
+        margin-top: 25px;
+        padding-top:15px;
+        padding-right: 20px;
 /*
         margin-top: 0;
         padding-left: 50px;
         padding-bottom: 20px;
 */
+        
+/*
+        margin: 0;
+        padding: 0px;
+        margin-left: 80px;
+        margin-top: 20px;
+*/
+    }
+    
+    .headerlogo {
+/*
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+*/
+        width: 100%;
+        margin-left:10px;
+        
     }
     
     .elementlogo{
 /*        box-sizing: border-box;*/
-        margin-left:0px;
+        margin-left:10px;
         margin-top: 10px;
-        padding-right: 150px;
+        padding-right: 0px;
     }
-   
+       
+    header h2{
+        font-size: 1.4em;
+/*        text-align: center;*/
+/*        padding: 0 20px;*/
+    }
+    header p{
+        padding: 0 20px;
+    }
     
-    
-    container1 h2{
+    .container1 h2{
         padding: 10px;
+        
     }
     
 /*    .container1 nav{*/
     
     #Search{
         display: none;
-        background-image: url(fas fa-search);
+/*        background-image: url(fas fa-search);*/
 /*        <i class="fas fa-search"></i>;*/
     }
     
     .fa-search{
         color:white;
-        border:1px solid #0065FC;
+/*        border:1px solid #0065FC;*/
         background-color:#0065FC;
 /*
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
 */
         border-radius: 15px;
-        font-weight :bold; 
+/*        font-weight :bold; */
 /*        cursor: pointer;  */
         padding: 17px;
         outline:none; 
@@ -859,7 +1017,49 @@ footer div{
     }
     
     header{
-        padding: 0 30px;
+/*        padding: 0 30px;*/
+/*        padding: 0 5px;*/
+        padding:0;
+        
+    }
+    header h2{
+        margin:20px
+    }
+    
+    
+    .navSearch {
+        /* display: flex; */
+        display: flex; */
+        border: 1px solid #f2f2f2;
+        border-radius: 20px;
+        width: 75%;
+        border-left: none;
+        border-right: none;
+        margin: 0;
+/*        padding-right: 32px;*/
+        position: relative;
+/*        padding-right: 120px;*/
+        padding-left:20px;
+    }
+    
+    .navSearch > i,input { 
+        padding: 17px;
+        outline:none; 
+        flex-basis: auto;
+/*        border:1px solid #F2F2F2;  */
+        border:none;
+    }
+    
+    input#Search {
+        display:none;
+    }
+    
+    
+    fa-search{
+        width: 16px;
+        position: absolute;
+        height: 18px;
+        bottom: -1px;
     }
   
     div filtres{
@@ -868,7 +1068,7 @@ footer div{
     
     .filtres h2{
                 
-        max-width: 100%;
+/*        max-width: 100%;*/
 
 /*        display: inline-block;*/
 /*        width: 100%;*/
@@ -878,19 +1078,294 @@ footer div{
 /*        vertical-align: top;*/
         
 /*        padding: 0;*/
+         width: 100%;
+        
     }
     
-        /*
-            .filtres li{
-                flex-grow: 1;
-        }
-        */
+    div .filtres{
+        display: block;
+        padding-left: 20px;
+        
+    }
+    
+    ul{
+        padding-left: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #filtres ul li{
+        margin:0;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    
+    
+    #info{
+        margin:0 20px;
+    }
+    
+    #info p{
+        padding: 0 1px;
+    }
+    main{
+        margin:0;
+        padding:0;
+    }
+    aside {
+    /*
+        flex: 1;
+        border: 1px solid #F2F2F2;
+    */
+        /* padding: 20px 30px 20px; */
+/*        margin: 10px;*/
+    /*    border-radius: 35px;*/
+        width: 100%;
+        border-radius: 0;
+        margin:0;
+    }
+    
+    aside h2 {
+        /* margin-left: 25px; */
+        padding: 20px;
+    }
+    
+    #hotelpop {
+        margin: 15px 20px;
+    }
+/*
+    .col-{
+        height: 100%;
+    }
+*/
+    #activites{
+        display: flex;
+        flex-direction: column;
+/*        height: 900px;*/
+    }
+    
+     #activites figure {
+/*        height: 100%;*/
+
+         height: auto;
+         margin-bottom: 30px;
+/*         position: relative;*/
+    }
+    
+    #activite>h2{
+        margin-bottom: 30px;
+        padding-left: 20px;  
+    }
+    
+    
+    .wrapper{
+
+        margin:0 20px;
+        display: flex;
+        flex-wrap:wrap;
+        height: 0%;
+    /*    overflow: visible;*/
+    /*    justify-content:space-around;*/
+        justify-content: space-between;
+        padding-bottom: 50px;
+
+    }
+
+    
+    
+    
+    .wrapper figure div {
+        /* width: 100%; */
+        /* height: calc( 100% - 50px ); */
+        height: 200px;
+        /* height: 80%; */
+        /* height: 700px; */
+        background-position: center;
+        background-size: cover;
+        /* flex: 1 1 0; */
+    }
+    
+   
+  
+    .column{
+        width: 100%;
+/*        height: 150px;*/
+/*        width: 0;*/
+        
+    }
+    
+    #hebergement{
+        
+        border-color: none;
+        padding:0;
+        background-color: white;
+        margin:20px;
+        border: none;
+    }
+    
+    #hebergement figure{
+        margin:10px 0;
+    }
+    
+    section h2{
+        padding:15px 0;
+        margin: 0px;
+    }
+    
+    #activites>h2{
+        margin-left:10px;
+    }
+/*
+    .col-1,.col-2,.col-3,.col-4{
+        height:100%;
+    }
+    
+*/
+    
+/*
+    .col-{
+        height: 100%;
+    }
+    
+*/
+
+}
+    
+    
 
 
+
+
+
+
+
+    
+/*    la classe mobile est visible en dessous de 1024px et prends ces proprietes */
+    
+/*
+@media (max-width: 1024px) 
+    .mobile {
+        display: inline-block;
+        float: right;
+} 
+*/
+    
+/*    la classe desktop sera masquee en dessous de 1024px*/
+/*
+  @media (max-width: 1024px)    
+    .desktop {
+        display: none;
+}
+*/
+            
+/*
+@media (max-width: 1024px)
+    .elementlogo {
+         box-sizing: border-box; 
+        margin-left: 0px;
+        margin-top: 10px;
+        padding-right: 0;
+}
+*/
+
+/*
+ @media (max-width: 1024px)  
+    .container1{ 
+        position:relative;
+        height: 150px;
+        flex-wrap: wrap;
+}
+*/
+
+    
+/*
+@media (max-width: 1024px)
+    .inscription {
+        margin: 0;
+        padding: 0px;
+        margin-left: 80px;
+        margin-top: 20px;
+}
+*/
+    
+/*
+@media (max-width: 1024px)
+    .mobile {
+        display: inline-block;
+        float: right;
+}
+*/
+    
+/* ************ nav ********************/
+    
+/*
+@media (max-width: 1024px)
+    .element {
+        top: 30px;
+        padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; notre conteneur fait toute la largeur
+}
+*/
+
+    
+@media (max-width: 1024px)
+    .topnav {
+        margin-top: 30px;
+        padding: 0;
+        width: 100%;
+}
+    
+@media (max-width: 1024px)
+    .topnav :hover {
+        
+        border-bottom-color: #0065FC;  
+/*        padding-bottom:10px; ?????????????????*/
+        
+}
+    
+@media (max-width: 1024px)
+    .container1 {
+/*        position: relative;*/
+/*        height: 150px;*/
+        flex-wrap: wrap;
+}
+    
+    
+    
+    
+    
+    
+/*
 @media screen and (min-width: 1024px){
     
     span .fa-search{
         display: none;
     }
+*/
     
 }
+    
+    
+    
+    
+    
+/*   --------------------------------------------- */
+    
+    
+    /*
+     .element{
+        position:absolute;
+        top:30px;
+         order:2;
+        padding-bottom:20px;
+        
+    }
+*/
+/*
+    .topnav{
+        margin-top:30px;
+        padding:20px;
+    }
+*/
