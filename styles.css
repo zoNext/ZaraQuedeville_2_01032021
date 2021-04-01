@@ -587,10 +587,10 @@ aside figure:hover{
 
 #hotelpop div{ /* proprietes communes aux images*/
     height: 100%;
-    width: 150px;
+    width: 120px;
     background-position: center;
     background-size: cover;
-    flex: 1 1 0;
+/*    flex: 1 1 0;*/
     
 }
 
@@ -632,12 +632,11 @@ aside figcaption :last-child{
 }
 
 
-
 /***************SECTION ACTIVITES**************/
 
 #activites>h2{
 /*    padding: 20px 30px 0px;*/
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding-left: 10px;
 }
 
@@ -1014,30 +1013,31 @@ footer div{
         outline:none; 
         flex-basis: auto;
         border:1px solid #F2F2F2;
+        
+        
+        width: 17px;
+        position: absolute;
+        height: 17px;
+        bottom: -1px;
     }
     
     header{
-/*        padding: 0 30px;*/
-/*        padding: 0 5px;*/
         padding:0;
-        
     }
+    
     header h2{
         margin:20px
     }
     
-    
     .navSearch {
-        /* display: flex; */
-        display: flex; */
+        display: flex;
         border: 1px solid #f2f2f2;
         border-radius: 20px;
         width: 75%;
         border-left: none;
         border-right: none;
         margin: 0;
-/*        padding-right: 32px;*/
-        position: relative;
+/*        position: relative;*/
 /*        padding-right: 120px;*/
         padding-left:20px;
     }
@@ -1128,6 +1128,7 @@ footer div{
     aside h2 {
         /* margin-left: 25px; */
         padding: 20px;
+        padding-bottom: 0px;
     }
     
     #hotelpop {
@@ -1210,6 +1211,11 @@ footer div{
     section h2{
         padding:15px 0;
         margin: 0px;
+    }
+    
+    section>h3{
+       
+        padding-left: 0px;
     }
     
     #activites>h2{
