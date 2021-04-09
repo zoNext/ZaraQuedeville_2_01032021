@@ -246,7 +246,6 @@ div .filtres{
 /****main : section + aside ***************************************/
 main{
     margin: 0 10px;
-/*    border:1px solid red;*/
     padding: 0 20px;    
     flex-direction: column;
 }
@@ -255,13 +254,10 @@ main{
     background-color:  #F2F2F2;   
 }
 
-/* modif*/
 .hebergement{
     display: flex;
 /*    flex-wrap: wrap;*/
     flex-wrap: wrap-reverse;
-/*    flex-direction:column-reverse;*/
-/*    margin: 0 20px;*/
 }
 
 
@@ -301,7 +297,7 @@ section>h3{
     box-sizing:border-box;
     width: 28%;    
 /*    max-width: 28%;*/
-    flex: 1 0 300px;
+    flex: 1 0 200px;
     overflow: hidden;
 
 /*    min-width: 200px;*/  
@@ -573,7 +569,8 @@ section h2{
     display: flex;
   
     flex-wrap:wrap;
-    height: 500px;
+/*    height: 500px;*/
+    height: 1300px;
 /*    overflow: visible;*/
 /*    justify-content:space-around;*/
     justify-content: space-between;
@@ -822,29 +819,43 @@ footer div{
         width: 250px;
     }
     
-    wrapper {
-/*
-        flex-direction: column;
-        height: auto;
-        height: 0;
-        margin:10px;
-*/
+    wrapper {  
+            height: 1300px;
+/*        flex-direction: column;*/
+/*        height: auto;*/
+/*        height: none;*/
+/*        margin:10px;*/
     }
-    .column{
 /*
-        width: 50%;
+    .column{
         height: auto;
-*/
     }
         
     
     .wrapper figure div {
        
+        background-position: center;
+        background-size: cover;
+      
+    }
+*/
+    
+     .wrapper figure div {
+        /* width: 100%; */
+        /* height: calc( 100% - 50px ); */
+        height: 200px;
 /*
         background-position: center;
         background-size: cover;
 */
+        /* flex: 1 1 0; */
+    }
       
+    .column{
+        width: 100%;
+        height: fit-content;
+/*        width: 0;*/
+        
     }
      
     #hebergement{
@@ -855,7 +866,7 @@ footer div{
         display: flex;
         /* flex-wrap: wrap; */
         flex-wrap: wrap-reverse;
-        flex:none;
+/*        flex:none;*/
     }
     
     #hebergement figure{
@@ -863,11 +874,10 @@ footer div{
     }
       
     
-/*
      #activites figure {
         margin:10px;
+        height: auto;
     }   
-*/
    
     footer div{
             padding: 0 20%;
