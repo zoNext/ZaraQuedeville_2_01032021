@@ -194,7 +194,8 @@ div .filtres{
 }
 
 #filtres ul li:hover{
-    background-color: #0065FC;
+    background-color: #DEEBFF; 
+;
 }
 
 #filtres ul li i {
