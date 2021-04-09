@@ -985,10 +985,9 @@ footer div{
 
 
     
-/*@media and (max-width: 320px){*/
+
 
 @media screen and (max-width: 480px){
-    
     body {
     margin :0px;
     }
@@ -1226,15 +1225,11 @@ footer div{
     #activites{
         display: flex;
         flex-direction: column;
-/*        height: 900px;*/
     }    
     
      #activites figure {
-/*        height: 100%;*/
-
          height: auto;
          margin-bottom: 30px;
-/*         position: relative;*/
     }
     
     #activite>h2{
@@ -1245,26 +1240,21 @@ footer div{
     .wrapper{
         margin:0 20px;
         height: 0%;
+        flex-wrap:wrap;
+        
     }  
     
     .wrapper figure div {
-        /* width: 100%; */
-        /* height: calc( 100% - 50px ); */
         height: 200px;
         background-position: center;
         background-size: cover;
-        /* flex: 1 1 0; */
     }
       
     .column{
-        width: 100%;
-/*        height: 150px;*/
-/*        width: 0;*/
-        
+        width: 100%;    
     }
     
-    #hebergement{
-        
+    #hebergement{  
         border-color: none;
         padding:0;
         background-color: white;
