@@ -422,7 +422,7 @@ a:hover{
 #hebergement figcaption{
     text-align: left;
     padding-left: 10px;
-/*    height: 100px;*/
+    height: 100px;
     font-size: 0.9em;
     margin:0;
     color:black;    
@@ -764,7 +764,7 @@ footer div{
 
 
 
-@media screen and (min-width: 481px) and (max-width: 767px){
+@media screen and (min-width: 480px) and (max-width: 767px){
          
     .headerlogo{
         padding-bottom: 31px;
@@ -872,6 +872,8 @@ footer div{
     
     #hebergement figure{
         margin:20px;
+/*        flex: 1 0 300px;*/
+       
     }
       
     
@@ -1264,6 +1266,7 @@ footer div{
     
     #hebergement figure{
         margin:10px 0;
+        flex: 1 0 230px;
     }
     
     section h2{
