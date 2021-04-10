@@ -666,9 +666,11 @@ footer div{
 }
 
 
-/*@media screen and (min-width: 768px) and (max-width:1024px){*/
 
-    @media screen and (min-width: 768px) and (max-width: 1280px){
+@media screen and (min-width: 768px) and (max-width: 1280px){
+    wrapper{
+        height: 500px;
+    }
 
     #choix1{
     background-image: url(images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -983,7 +985,6 @@ footer div{
     }
     
     .elementlogo{
-/*        box-sizing: border-box;*/
         margin-left:10px;
         margin-top: 10px;
         padding-right: 0px;
@@ -999,11 +1000,8 @@ footer div{
     }
     
     .container1 h2{
-        padding: 10px;
-        
+        padding: 10px;   
     }
-    
-
     
     #Search{
         display: none;
@@ -1011,10 +1009,8 @@ footer div{
     
     .fa-search{
         color:white;
-/*        border:1px solid #0065FC;*/
         background-color:#0065FC;
         border-radius: 15px;
-/*        font-weight :bold; */
 /*        cursor: pointer;  */
         padding: 17px;
         outline:none; 
@@ -1037,8 +1033,6 @@ footer div{
         border-left: none;
         border-right: none;
         margin: 0;
-/*        position: relative;*/
-/*        padding-right: 120px;*/
         padding-left:20px;
     }
     
@@ -1046,7 +1040,6 @@ footer div{
         padding: 17px;
         outline:none; 
         flex-basis: auto;
-/*        border:1px solid #F2F2F2;  */
         border:none;
     }
     
@@ -1061,25 +1054,13 @@ footer div{
         height: 18px;
         bottom: -1px;
     }
-    
-    
   
     div filtres{
         flex: none;
     }
     
     .filtres h2{
-         width: 100%;
-                
-/*        max-width: 100%;*/
-
-/*       flex-grow: 4;*/
-/*        margin: 10px auto auto;*/
-/*        vertical-align: top;*/
-        
-/*        padding: 0;*/
-        
-        
+         width: 100%;    
     }
     
     div .filtres{
@@ -1098,8 +1079,7 @@ footer div{
         margin:0;
         margin-right: 15px;
         margin-bottom: 15px;
-    }
-    
+    }   
     
     #info{
         margin:0 20px;
@@ -1149,8 +1129,7 @@ footer div{
     .wrapper{
         margin:0 20px;
         height: 0%;
-        flex-wrap:wrap;
-        
+        flex-wrap:wrap;      
     }  
     
     .wrapper figure div {
@@ -1181,8 +1160,7 @@ footer div{
         margin: 0px;
     }
     
-    section>h3{
-       
+    section>h3{     
         padding-left: 0px;
     }
     
@@ -1208,69 +1186,32 @@ footer div{
     #choix6{
     background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     }
-
     #choix7{
-    /*
-        height: 100%;
-        width: 130px;
-    */
-        background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     }
-
     #choix8{
-        background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
     }
-
     #choix9{
-        background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     }
-
     #choix10{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-    /*    width: 100%;*/
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
-
-
     #choix11{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-        /*    position: absolute;*/
-        /*    top: 0;*/
+       background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
-
-
     #choix12{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     }
-
-
     #choix13{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
-
     #choix14{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
     #choix15{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     }
 
 }
@@ -1294,106 +1235,3 @@ footer div{
     
     
     
-/*
-@media screen and (min-width: 1024px){
-    
-    span .fa-search{
-        display: none;
-    }
-*/
-    
-
-    
-    
-    
-    
-    
-/*   --------------------------------------------- */
-    
-
-    
-/*
-    #elementlogo{   
-    height: 100px;    
-    background-image: url(images/logo/Reservia.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-*/
-
-/*
-    width:100px;
-    background: url(images/logo/Reservia.svg) no-repeat center; 
-}
-*/
-
-
-
-
-/*    la classe mobile est visible en dessous de 1024px et prends ces proprietes */
-    
-/*
-@media (max-width: 1024px) 
-    .mobile {
-        display: inline-block;
-        float: right;
-} 
-*/
-    
-/*    la classe desktop sera masquee en dessous de 1024px*/
-/*
-  @media (max-width: 1024px)    
-    .desktop {
-        display: none;
-}
-*/
-            
-/*
-@media (max-width: 1024px)
-    .elementlogo {
-         box-sizing: border-box; 
-        margin-left: 0px;
-        margin-top: 10px;
-        padding-right: 0;
-}
-*/
-
-/*
- @media (max-width: 1024px)  
-    .container1{ 
-        position:relative;
-        height: 150px;
-        flex-wrap: wrap;
-}
-*/
-
-    
-/*
-@media (max-width: 1024px)
-    .inscription {
-        margin: 0;
-        padding: 0px;
-        margin-left: 80px;
-        margin-top: 20px;
-}
-*/
-    
-/*
-@media (max-width: 1024px)
-    .mobile {
-        display: inline-block;
-        float: right;
-}
-*/
-    
-/* ************ nav ********************/
-    
-/*
-@media (max-width: 1024px)
-    .element {
-        top: 30px;
-        padding-bottom: 20px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%; notre conteneur fait toute la largeur
-}
-*/
