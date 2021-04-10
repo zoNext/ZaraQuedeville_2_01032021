@@ -570,10 +570,7 @@ section h2{
     display: flex;
   
     flex-wrap:wrap;
-/*    height: 500px;*/
-    height: 1300px;
-/*    overflow: visible;*/
-/*    justify-content:space-around;*/
+    height: 500px;
     justify-content: space-between;
     padding-bottom: 50px;
 }
@@ -635,13 +632,15 @@ section h2{
     
 }
 
-/*
 figure:hover{
      transform: scale(1.05);
 }
-*/
 
-/*footer******************************************************/
+/****
+*****
+Footer
+****
+****/
 
 footer{
      background-color:  #F2F2F2;
@@ -691,33 +690,19 @@ footer div{
     }
 
     #choix7{
-    /*
-        height: 100%;
-        width: 130px;
-    */
-        background-image: url(images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
+    background-image: url(images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     }
 
     #choix8{
-        background-image: url(images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg);
     }
 
     #choix9{
-        background-image: url(images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     }
 
     #choix10{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-    /*    width: 100%;*/
+    background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
 
 
@@ -755,12 +740,6 @@ footer div{
     }
 
 }
-
-
-    
-
-
-
 
 
 
@@ -822,42 +801,16 @@ footer div{
     }
     
     wrapper {  
-            height: 1300px;
-/*        flex-direction: column;*/
-/*        height: auto;*/
-/*        height: none;*/
-/*        margin:10px;*/
+        height: 1300px;
     }
-/*
-    .column{
-        height: auto;
-    }
-        
     
     .wrapper figure div {
-       
-        background-position: center;
-        background-size: cover;
-      
-    }
-*/
-    
-     .wrapper figure div {
-        /* width: 100%; */
-        /* height: calc( 100% - 50px ); */
         height: 200px;
-/*
-        background-position: center;
-        background-size: cover;
-*/
-        /* flex: 1 1 0; */
     }
       
     .column{
         width: 100%;
-        height: fit-content;
-/*        width: 0;*/
-        
+        height: fit-content;    
     }
      
     #hebergement{
@@ -866,18 +819,14 @@ footer div{
     
     .hebergement {
         display: flex;
-        /* flex-wrap: wrap; */
         flex-wrap: wrap-reverse;
-/*        flex:none;*/
     }
     
     #hebergement figure{
         margin:20px;
 /*        flex: 1 0 300px;*/
        
-    }
-      
-    
+    }   
      #activites figure {
         margin:10px;
         height: auto;
@@ -886,7 +835,6 @@ footer div{
     #activites>h2 {
         margin-left:10px;
     }
-    
     
     footer div{
             padding: 0 20%;
@@ -910,84 +858,42 @@ footer div{
     #choix6{
     background-image: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     }
-
     #choix7{
-    /*
-        height: 100%;
-        width: 130px;
-    */
-        background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
+    background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     }
 
     #choix8{
-        background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
     }
-
     #choix9{
-        background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     }
-
     #choix10{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-    /*    width: 100%;*/
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
-
-
     #choix11{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-        /*    position: absolute;*/
-        /*    top: 0;*/
+    background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
-
-
     #choix12{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-
+    background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     }
-
-
     #choix13{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
 
     #choix14{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
     #choix15{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     }
 
 }
     
 
-/********************************************************/
-/*=============version SMARTPHONE====================*/
-/*version smartphone : 320px till 768px*/
-
-
-/*@media and (max-width: 320px){*/
-/*@media screen and (min-width: 320px) and (max-width: 480px){*/
-
-
-    
+/***********************/
+/*** mode SMARTPHONE ***/
+/***********************/
 
 
 @media screen and (max-width: 480px){
