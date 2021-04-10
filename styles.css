@@ -19,28 +19,28 @@ header{
 
 /*************container1*************************************/
   
-    .container1{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 /*===================Logo ================================*/
 
-    .mobile {
-        display: none;
-    }
-    .desktop {
-        display: block;   
-        font-weight :bold; 
-    /*    color: blue;*/
-        font-size: 1.2em; 
-    }
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;   
+    font-weight :bold; 
+/*    color: blue;*/
+    font-size: 1.2em; 
+}
 
-    .elementlogo{
-        padding-top: 30px;
-    }
+.elementlogo{
+    padding-top: 30px;
+}
 
     
 
@@ -48,43 +48,43 @@ header{
 /********************* nav**************************/
 
 
-    ul{
-        display: flex;  
-        flex-wrap: wrap;
-        padding: 0 20px;
-    }
+ul{
+    display: flex;  
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
 
-    .topnav{  
-        list-style-type: none;
-        font-size: 1em; 
-        align-items: baseline;
-    }
+.topnav{  
+    list-style-type: none;
+    font-size: 1em; 
+    align-items: baseline;
+}
 
-    .topnav li{
-        padding:50px 40px;
-        text-align: center;
-        padding-bottom: 10px;
-    }
+.topnav li{
+    padding:50px 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
 
-    .topnav a {
-        text-decoration: none;
-        color:gray;
-        padding-top: calc( 40px + 1em + 10px - 1px ); 
-    }
+.topnav a {
+    text-decoration: none;
+    color:gray;
+    padding-top: calc( 40px + 1em + 10px - 1px ); 
+}
 
 
-    .topnav :hover{
-        color: blue;    
-    }
+.topnav :hover{
+    color: blue;    
+}
 
-    .topnav li:nth-child(-n+2):hover{
-            border-top:2px solid #0065FC;  
-    }
+.topnav li:nth-child(-n+2):hover{
+        border-top:2px solid #0065FC;  
+}
 
-    .topnav li:last-child a{
-        color: blue;
-        padding-right: 0;
-    }
+.topnav li:last-child a{
+    color: blue;
+    padding-right: 0;
+}
 
 
 
@@ -235,8 +235,7 @@ main{
     flex : 2;
     padding : 10px 20px;
     margin:10px;
-    border-radius: 35px;
-    
+    border-radius: 35px;   
 }
 
 
@@ -263,15 +262,6 @@ section>h3{
     background-color: white;
     box-shadow: 0px 0px 10px #aaa; 
 }
-
-
-/*
-a figure:hover{
-    color: red;
-    background-image:url(images/gris_anim.gif);
-    background-repeat:no-repeat;
-}
-*/
 
 #hotel div{ /* proprietes communes aux images*/
     width: 100%;
@@ -519,15 +509,12 @@ footer{
      background-color:  #F2F2F2;
      display: flex;
      flex-wrap: wrap;
-/*     justify-content: space-between;*/
-/*    margin: 0;*/
      padding: 20px 40px;
     
         
 }
 
 footer div{
-/*    border:1px solid black;*/
     flex:1 1 200px;
     padding-left: 10px;
 }
@@ -582,36 +569,23 @@ footer div{
 
 
     #choix11{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    /*
-        background-position: center;
-        background-size: cover;
-    */
-        /*    position: absolute;*/
-        /*    top: 0;*/
+    background-image: url(images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
 
 
     #choix12{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-
+    background-image: url(images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     }
 
-
     #choix13{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
 
     #choix14{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
     #choix15{
-    /*    height: calc( 100% - 50px );*/
-        background-image: url(images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     }
 
 }
@@ -640,7 +614,6 @@ footer div{
     }
     
      .col-1,.col-2,.col-3,.col-4{
-/*        height:100%;*/
     }
     
    
@@ -662,7 +635,6 @@ footer div{
     }
     
     aside h2 {
-        /* margin-left: 25px; */
         padding: 20px;
         padding-bottom: 0px;
     }
@@ -783,7 +755,6 @@ footer div{
         flex-wrap: wrap;
     }  
     
-/*    la classe mobile est visible en dessous de 1024px et prends ces proprietes */
     .mobile {
         display: inline-block;
         float: right;    
@@ -794,13 +765,11 @@ footer div{
         padding-right: 20px;
          font-weight :bold; 
     }   
-    
-/*    la classe desktop sera masquee en dessous de 480px*/
+
     .desktop {
         display: none;
     }       
     .elementlogo {
-    /* box-sizing: border-box; */
         margin-left: 0px;
         margin-top: 10px;
         padding-right: 0;
@@ -808,7 +777,6 @@ footer div{
    
     
     .element {
-/* width: 100%;  notre conteneur fait toute la largeur*/
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -827,26 +795,17 @@ footer div{
     
     .topnav li{
         padding:0;
-        /* justify-self: end; */
         width: 50%;
-        /* width: 25%;    */
         text-align: center;
         border-bottom: 2px solid gray;
         padding-bottom: 10px;
-/*        border-top:none;*/
     }
     
      .topnav li:nth-child(-n+2):hover { 
         border-top:none;
     }
     
-/*
-    .topnav li:nth-child(-n+2) a:hover{
-        border-top:2px solid #0065FC;  
-        padding-top: 50px;
-    }
-*/
-    
+
     .topnav li:hover{
         border-bottom-color: blue;
         border-top:none;       
@@ -884,7 +843,6 @@ footer div{
         color:white;
         background-color:#0065FC;
         border-radius: 15px;
-/*        cursor: pointer;  */
         padding: 17px;
         outline:none; 
         flex-basis: auto;
@@ -895,9 +853,7 @@ footer div{
         height: 17px;
         bottom: -1px;
     }
-    
-    
-    
+       
     .navSearch {
         display: flex;
         border: 1px solid #f2f2f2;
@@ -938,8 +894,7 @@ footer div{
     
     div .filtres{
         display: block;
-        padding-left: 20px;
-        
+        padding-left: 20px;     
     }
     
     ul{
@@ -975,7 +930,6 @@ footer div{
     }
     
     aside h2 {
-        /* margin-left: 25px; */
         padding: 20px;
         padding-bottom: 0px;
     }
