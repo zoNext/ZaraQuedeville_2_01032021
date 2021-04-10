@@ -14,25 +14,19 @@ a {
 /***********header********************************************/
 
 header{
-/*    height: 300px;*/
-/*    padding-top: 40px;  */
-/*    padding : 20px  */
    padding : 0 40px;
-
 }
 
 /*************container1*************************************/
   
     .container1{
         display: flex;
-    /*    align-items: baseline;*/
         align-items: center;
         justify-content: space-between;
     }
 
 
 /*===================Logo ================================*/
-/*la div avec deux elements (logo + inscription/mobile) pour mieux les gerer*/
 
     .mobile {
         display: none;
@@ -68,18 +62,14 @@ header{
 
     .topnav li{
         padding:50px 40px;
-        /* justify-self: end; */
-    /*    width: 50%;    */
         text-align: center;
-    /*    border-top: 2px solid #0065FC;*/
         padding-bottom: 10px;
     }
 
     .topnav a {
         text-decoration: none;
         color:gray;
-        /* padding-top: 40px; */
-         padding-top: calc( 40px + 1em + 10px - 1px ); 
+        padding-top: calc( 40px + 1em + 10px - 1px ); 
     }
 
 
@@ -87,20 +77,13 @@ header{
         color: blue;    
     }
 
-/*@media screen and (min-width: 768px) and (max-width:1024px)s*/
-/*.topnav li:nth-child(-n+2) a:hover{*/
     .topnav li:nth-child(-n+2):hover{
             border-top:2px solid #0065FC;  
-    /*        padding-top: 50px;*/
     }
 
     .topnav li:last-child a{
         color: blue;
         padding-right: 0;
-    /*
-        font-weight :bold; 
-        font-size: 1.2em; 
-    */
     }
 
 
@@ -112,13 +95,9 @@ header{
     display: inline-block;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
-/*    width: 90%;*/
     border-left: none;
     border-right: none;
-/*    margin:auto;*/
-   
     position:relative;
-/*    padding-right: 120px;*/
 }
 
 .navSearch > i,input { 
@@ -137,9 +116,7 @@ input#Search {
     border-bottom-right-radius: 20px;
     font-weight :bold; 
     cursor: pointer; 
-/*    float: left;*/
     display: inline-block;
-/*    display: none;*/
     position:absolute;
     width:120px;
 }
@@ -161,8 +138,6 @@ div .filtres{
     display:flex; 
     align-items: baseline;
     flex-wrap: wrap;
-/*    justify-content: space-between;*/
-    
 }
 
 .filtres ul{
@@ -183,10 +158,7 @@ div .filtres{
     position: relative;
     padding-left: 50px;
     padding-right: 10px;
-   /* padding: 0px 10px 0px 65px; */
-    line-height: 38px;
-    /* width: 40px; */
-    /* text-align: center; */   
+    line-height: 38px; 
 }
 
 #filtres ul li a {
@@ -199,8 +171,6 @@ div .filtres{
 }
 
 #filtres ul li i {
-    /* padding: 10px; */
-    /* margin-right: 10px;  */
     background-color: #DEEBFF; 
     color: #0065FC;
     position: absolute;
@@ -216,7 +186,6 @@ div .filtres{
 
 
 #info {
-/*    list-style-type: none;*/
     display: flex;
     align-items: baseline;
     color:gray;
@@ -257,19 +226,14 @@ main{
 
 .hebergement{
     display: flex;
-/*    flex-wrap: wrap;*/
     flex-wrap: wrap-reverse;
 }
 
 
 #hebergement{
-/*    margin-left: auto;    */
     border:1px solid #F2F2F2; 
     flex : 2;
-/*    flex: 0 0 30%;*/
-/*    flex-wrap: wrap;*/
     padding : 10px 20px;
-/*    padding : 0px 10px;*/
     margin:10px;
     border-radius: 35px;
     
@@ -282,28 +246,18 @@ section>h3{
 }
 
 #hotel{
-/*    border: 10px solid yellow;*/
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-/*    height: 100vh;*/
-/*    margin: 10px 0px;*/
-/*    overflow: hidden;*/
 }
-
-/*section figure{*/
 
 #hebergement figure{    
     border: 7px solid white;
     box-sizing:border-box;
     width: 28%;    
-/*    max-width: 28%;*/
     flex: 1 0 200px;
     overflow: hidden;
-
 /*    min-width: 200px;*/  
-
-/*    height: 150px;*/  
     margin:20px;
     border-radius: 25px;
     background-color: white;
@@ -324,7 +278,6 @@ a figure:hover{
     height: 110px;
     background-position: center;
     background-size: cover;
-/*    flex: 1 1 0;*/
 }
 
 
@@ -348,78 +301,42 @@ background-image: url(images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-u
 }
 
 #choix7{
-/*
-    height: 100%;
-    width: 130px;
-*/
-    background-image: url(images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
-/*
-    background-position: center;
-    background-size: cover;
-*/
+background-image: url(images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
 
 #choix8{
-    background-image: url(images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
+background-image: url(images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg);
 }
 
 #choix9{
-    background-image: url(images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+background-image: url(images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 
 #choix10{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-/*
-    background-position: center;
-    background-size: cover;
-*/
-/*    width: 100%;*/
+background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 
 
 #choix11{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-/*
-    background-position: center;
-    background-size: cover;
-*/
-    /*    position: absolute;*/
-    /*    top: 0;*/
+background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
 }
-
 
 #choix12{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-
+background-image: url(images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
 }
 
-
 #choix13{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+background-image: url(images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
 }
 
 #choix14{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
 #choix15{
-/*    height: calc( 100% - 50px );*/
-    background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
 }
 
-/*
-a:hover{
-    color: red;
-    background-image:url(images/gris_anim.gif);
-    background-repeat:no-repeat;
-}
-*/
 
-    
 #hebergement figcaption{
     text-align: left;
     padding-left: 10px;
@@ -435,41 +352,24 @@ a:hover{
     margin-bottom: 25px;
 }
 
-/*
-.hotel1 i:last-of-type {
-    color:slategray;
-}
-*/
 
 .hotel4etoiles i:nth-child(5){
-/*    color:#F2F2F2;*/
     color:slategray;
 }
-
-
-/*
-.hotel4 i:last-of-type ,.hotel4 i:nth-last-of-type(2){
-    color:#F2F2F2;
-    color:slategray;
-}
-*/
 
 .hotel3etoiles i:nth-child(n+4){
     color:slategray;
 }
 
 /*aside************************/
-aside{
-    
+aside{  
     flex : 1;
     border:1px solid #F2F2F2; 
-/*    padding : 20px 30px 20px;*/
     margin: 10px 10px 10px 30px;
     border-radius: 35px;
 }
 
 aside h2{
-/*    margin-left: 25px;*/
     padding: 20px 35px;
 }
 
@@ -477,23 +377,14 @@ aside figure{
     display:flex;
     border: 7px solid white;
     box-sizing:border-box;
-/*    width:100%;*/
     height: 180px;
     overflow: hidden;
     border-radius: 20px;
     background-color: white;
-/*    margin: 30px 5px 30px 0px;*/
     margin:30px 0px;  
     box-shadow: 0px 0px 10px #aaa; 
     color:black;
 }
-
-/*
-aside figure:hover{
-    box-shadow: 0 0 11px rgba(33,33,33,.2); 
-}
-*/
-
 
 .fa-chart-line {
     float: right;
@@ -510,24 +401,16 @@ aside figure:hover{
     width: 120px;
     background-position: center;
     background-size: cover;
-/*    flex: 1 1 0;*/
-    
 }
 
 
 
 aside figcaption{
-/*    display: flex;*/
-/*    flex-direction: column;*/
     margin: 0 10px;    
-/*    font-size: 0.9em;*/
     font-size: 0.9em;
     width: 150px;
-/*    width: 120px;*/
     flex: 1 1 0;
 }
-
-/*aside figcaption :nth-child(2){*/
 
 aside figcaption :last-child{
     margin-top: 25px;
@@ -548,15 +431,10 @@ section h2{
 
 
 #activites figure{
-  
-/*border: 7px solid white; */
     box-sizing: border-box;
-    /* flex-wrap: wrap; */
     height: 100%;
-    /* width: 290px; */
     position: relative;
-    /* width: 50%; */
-    /* height: 500px; */     
+    /* width: 50%; */    
     overflow: hidden;
     border-radius: 25px;
     background-color: white;
@@ -596,32 +474,25 @@ section h2{
     height:60%;
 }
 .col-4{
-/*    height:104%;*/
     height: 100%;
 }
 
 #activites h3{
-/*    margin-left: 25xp;*/
     margin-left: 10px;
     font-size: 1em;
     line-height: 15px;
 }
 
 .wrapper figure div{ /* proprietes communes aux images*/
-/*    width: 100%;*/
     height: calc( 100% - 50px );
-/*    height: 300px;*/
     background-position: center;
-    background-size: cover;
-/*    flex: 1 1 0;*/
-    
+    background-size: cover;    
 }
 
 #activites figcaption{
     text-align: left;
     padding-left: 10px;
     height: 50px;
-/*    width:28%;*/
     font-size: 0.9em;
     margin: 0;
     color: black;
@@ -635,6 +506,8 @@ section h2{
 figure:hover{
      transform: scale(1.05);
 }
+
+
 
 /****
 *****
@@ -659,7 +532,7 @@ footer div{
     padding-left: 10px;
 }
 .mobile {
-/*    display: none;*/
+/*    display: none;*/0
 }
 .desktop {
     display: block;
@@ -803,7 +676,7 @@ footer div{
     }
     
     wrapper {  
-        height: 1300px;
+/*        height: 1300px;*/
     }
     
     .wrapper figure div {
