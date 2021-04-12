@@ -10,14 +10,10 @@ a {
     color: blue;
 }
 
-
-
-
 header{
    padding : 0 40px;
 }
 
-/*************container1*************************************/
   
 .container1{
     display: flex;
@@ -26,7 +22,7 @@ header{
 }
 
 
-/*===================Logo ================================*/
+/*======== Logo ===========*/
 
 .mobile {
     display: none;
@@ -44,8 +40,8 @@ header{
 
     
 
-/*====================================================*/
-/********************* nav**************************/
+/*===================================*/
+/**************** nav*************/
 
 
 ul{
@@ -87,9 +83,8 @@ ul{
 }
 
 
-
-/*============================================================*/
-/*--------------------navSearch---------------------------*/
+/*===========================================*/
+/*-----------------navSearch----------------*/
 
 .navSearch {
     display: inline-block;
@@ -130,7 +125,7 @@ input#Search {
 }
 
  
-/*-----------------------------------------------------------*/
+/*------------------------------------*/
 
 div .filtres{
     display:flex; 
@@ -327,12 +322,10 @@ background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash
     color:black;    
 }
 
-
 .fa-star{
     color:#0065FC;
     margin-bottom: 25px;
 }
-
 
 .hotel4etoiles i:nth-child(5){
     color:slategray;
@@ -382,7 +375,6 @@ aside figure{
     background-position: center;
     background-size: cover;
 }
-
 
 
 aside figcaption{
@@ -440,8 +432,7 @@ section h2{
    flex-direction: column;
    justify-content: space-between;  
 }
-
-  
+ 
 
 .col-1{
     height:34%;
