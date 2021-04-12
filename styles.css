@@ -240,7 +240,7 @@ section>h3{
     border: 7px solid white;
     box-sizing:border-box;
     width: 28%;    
-    flex: 1 0 200px;
+
     overflow: hidden;
 /*    min-width: 200px;*/  
     margin:20px;
@@ -513,10 +513,14 @@ footer div{
 BreakPoint: (768px --> 1280px)
 ****
 ****/
-
+@media screen and (max-width: 1024px){
+    #hebergement figure {
+        flex: 1 0 200px;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1280px){
-    wrapper{
+    .wrapper{
         height: 500px;
     }
 
@@ -637,8 +641,8 @@ BreakPoint: (480px --> 767px)
         width: 200px;
     }
     
-    wrapper {  
-/*        height: 1300px;*/
+    .wrapper {  
+        height: auto;
     }
     
     .wrapper figure div {
