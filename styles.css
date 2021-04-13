@@ -683,6 +683,11 @@ BreakPoint: (480px --> 767px)
         margin: 20px 0px;
     }
     
+    section h2{
+        margin: 0px;
+        padding: 20px 0px;
+    }
+    
     #hebergement figure{
 /*        margin:20px;*/
 /*        flex: 1 0 300px;*/
@@ -691,7 +696,8 @@ BreakPoint: (480px --> 767px)
      #activites figure {
         margin:10px;
         height: auto;
-    }   
+    }  
+    
    
     #activites>h2 {
         margin-left:10px;
@@ -778,12 +784,15 @@ BreakPoint: (480px)
         flex-wrap: wrap;
     }  
     
+    .mobile.inscription{
+            margin-top: 60px;
+    }
+    
     .mobile {
         display: inline-block;
-        float: right;    
-            
+        float: right;            
         margin-left:0px;
-        margin-top: 60px;
+        margin-top: 45px;
 /*        padding-top:15px;  */
         padding-right: 20px;
          font-weight :bold; 
@@ -881,7 +890,7 @@ BreakPoint: (480px)
         display: flex;
         border: 1px solid #f2f2f2;
         border-radius: 20px;
-        width: calc( 100% - 115px );
+        width: calc( 100% - 155px );
         border-left: none;
         border-right: none;
         margin-left:20px;
@@ -998,7 +1007,7 @@ BreakPoint: (480px)
     }
     
     .flyover{
-        width: 335px;
+        width: 350px;
         margin:10px 15px;
     }
     
@@ -1008,8 +1017,8 @@ BreakPoint: (480px)
     }
     
     section h2{
-/*        padding:15px 0;*/
         margin: 0px;
+        padding: 20px 35px;
     }
     
     section>h3{     
