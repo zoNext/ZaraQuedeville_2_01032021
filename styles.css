@@ -517,14 +517,21 @@ footer div{
 
 /****
 *****
-BreakPoint: (768px --> 1280px)
+BreakPoint: (1024px)
 ****
 ****/
+
 @media screen and (max-width: 1024px){
     #hebergement figure {
         flex: 1 0 200px;
     }
 }
+
+/****
+*****
+BreakPoint: (768px --> 1280px)
+****
+****/
 
 @media screen and (min-width: 768px) and (max-width: 1280px){
     .wrapper{
@@ -617,8 +624,7 @@ BreakPoint: (480px --> 767px)
         padding:50px 5px;
     }
     
-     .col-1,.col-2,.col-3,.col-4{
-    }
+
     .writing{
 /*        width: calc( 100% -150px);*/
     }
