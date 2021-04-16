@@ -89,32 +89,60 @@ ul{
 .navSearch {
     display: inline-block;
     border: 1px solid #F2F2F2;
-    border-radius: 20px;
     border-left: none;
     border-right: none;
-    position:relative;
+    position: relative;
+    margin-left: 50px;
+    height: 48px;
+    min-width: 200px;
 }
 
-.navSearch > i,input { 
-    padding: 17px;
-    outline:none; 
+
+.navSearch > i{
+    outline: none;
     flex-basis: auto;
-    border:1px solid #F2F2F2;  
-    border:none;
+    border: 1px solid #F2F2F2;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -55px;
+    top: -1px;
+    line-height: 50px;
+    text-align: center;
 }
 
+.navSearch > i,input {
+    outline: none;
+    flex-basis: auto;
+    border: 1px solid #F2F2F2;
+    border: none;
+    position: absolute;
+}
+
+.writing{
+    top: 0;
+    left: 0;
+    height: 48px;
+    padding: 0;
+    padding-left: 5px;
+    width: 100%;
+}
 
 input#Search {
-    color:white;
-    border:1px solid #0065FC;
-    background-color:#0065FC;
+    color: white;
+    border: 1px solid #0065FC;
+    background-color: #0065FC;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-weight :bold; 
-    cursor: pointer; 
+    font-weight: bold;
+    cursor: pointer;
     display: inline-block;
-    position:absolute;
-    width:120px;
+    position: absolute;
+    width: 120px;
+    height: 50px;    
+    right: -120px;
+    top: -1px;
 }
 
 
@@ -200,7 +228,7 @@ div .filtres{
 }
 
 
-/****main : section + aside ***************************************/
+/****MAIN : section + aside ***************************************/
 main{
     margin: 0 10px;
     padding: 0 20px;    
@@ -238,7 +266,7 @@ section>h3{
 }
 
 .flyover{
-    width: 232px;
+    width: calc( 33% - 20px );
     margin:20px 10px;
 }
 
@@ -515,17 +543,7 @@ footer div{
 
 
 
-/****
-*****
-BreakPoint: (1024px)
-****
-****/
 
-@media screen and (max-width: 1024px){
-    #hebergement figure {
-        flex: 1 0 200px;
-    }
-}
 
 /****
 *****
@@ -533,9 +551,15 @@ BreakPoint: (768px --> 1280px)
 ****
 ****/
 
-@media screen and (min-width: 768px) and (max-width: 1280px){
+/*@media screen and (min-width: 768px) and (max-width: 1280px){*/
+    
+@media screen and (min-width: 1024px) and (max-width: 1280px){
     .wrapper{
         height: 500px;
+    }
+    
+    .flyover{
+        width: calc( 50% - 20px );
     }
 
     #choix1{
@@ -599,12 +623,34 @@ BreakPoint: (768px --> 1280px)
 
 /****
 *****
+BreakPoint: (1024px)
+****
+****/
+
+/*@media screen and (max-width: 1024px){*/
+    
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    #hebergement figure {
+        flex: 1 0 200px;
+    }
+    
+    .flyover{
+/*        width: calc( 90% );*/
+        width: 90%;
+    }
+}
+
+
+/****
+*****
 BreakPoint: (480px --> 767px)
 ****
 ****/
 
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media screen and (min-width: 480px) and (max-width: 768px){
+
+/*@media screen and (max-width: 768px){*/
          
     .headerlogo{
         padding-bottom: 31px;
@@ -685,7 +731,9 @@ BreakPoint: (480px --> 767px)
     }
     
     .flyover {
-        width: 100%;
+/*        width: 100%;*/
+/*        width: 30%;*/
+        width: calc( 45% - 5px );
         margin: 20px 0px;
     }
     
@@ -782,8 +830,6 @@ BreakPoint: (480px)
     }
     
     header{
-/*        padding: 20px;*/
-/*        padding: 0 40px;*/
         padding:0;
     }
     .container1{ 
@@ -794,15 +840,13 @@ BreakPoint: (480px)
             margin-top: 60px;
     }
     
+    
     .mobile {
         display: inline-block;
-        float: right;            
-        margin-left:0px;
-        margin-top: 45px;
-/*        padding-top:15px;  */
-        padding-right: 20px;
-         font-weight :bold; 
-    }   
+        font-weight: bold;
+        position: absolute;
+        right: 30px;
+    }
 
     .desktop {
         display: none;
@@ -873,6 +917,9 @@ BreakPoint: (480px)
         padding: 10px;   
     }
     
+    /*===========================================*/
+    /*-----------------navSearch----------------*/
+    
     #Search{
         display: none;
     }
@@ -884,35 +931,33 @@ BreakPoint: (480px)
         padding: 17px;
         outline:none; 
         flex-basis: auto;
-        border:1px solid #F2F2F2;
-           
         width: 17px;
         position: absolute;
-        height: 17px;
-        bottom: -1px;
+        top:-1px;
     }
-       
-    .navSearch {
+
+     .navSearch {
         display: flex;
         border: 1px solid #f2f2f2;
         border-radius: 20px;
-        width: calc( 100% - 155px );
+/*        width: calc( 100% - 100px );*/
+        width: calc( 100% - 120px );
         border-left: none;
         border-right: none;
-        margin-left:20px;
+        margin-left: 75px;
+        min-width: 0;
+    }
+
+
+    .navSearch > i, input {
+        outline: none;
+        flex-basis: auto;
     }
     
-    .navSearch > i,input { 
-        padding: 17px;
-        outline:none; 
-        flex-basis: auto;
-/*        border:none;*/
-    }
     
     input#Search {
         display:none;
     }
-    
     
     fa-search{
         width: 16px;
@@ -920,6 +965,8 @@ BreakPoint: (480px)
         height: 18px;
         bottom: -1px;
     }
+ 
+    /*------------------------------------*/
   
     div filtres{
         flex: none;
@@ -1013,7 +1060,7 @@ BreakPoint: (480px)
     }
     
     .flyover{
-        width: 350px;
+        width: 90%;
         margin:10px 15px;
     }
     
@@ -1024,7 +1071,8 @@ BreakPoint: (480px)
     
     section h2{
         margin: 0px;
-        padding: 20px 35px;
+/*        padding: 20px 35px;*/
+        padding:20px;
     }
     
     section>h3{     
