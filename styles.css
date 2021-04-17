@@ -106,7 +106,7 @@ ul{
     width: 50px;
     height: 50px;
     position: absolute;
-    left: -55px;
+    left: -50px;
     top: -1px;
     line-height: 50px;
     text-align: center;
@@ -524,15 +524,15 @@ footer{
      background-color:  #F2F2F2;
      display: flex;
      flex-wrap: wrap;
-     padding: 20px 40px;
-    
-        
+     padding: 20px 40px;        
 }
 
-footer div{
+.footer-block{
     flex:1 1 200px;
     padding-left: 10px;
 }
+
+
 .mobile {
 /*    display: none;*/
 }
@@ -635,7 +635,6 @@ BreakPoint: (1024px)
     }
     
     .flyover{
-/*        width: calc( 90% );*/
         width: 90%;
     }
 }
@@ -670,10 +669,6 @@ BreakPoint: (480px --> 767px)
         padding:50px 5px;
     }
     
-
-    .writing{
-/*        width: calc( 100% -150px);*/
-    }
     
 /*
     input[type="text" i] {
@@ -704,7 +699,9 @@ BreakPoint: (480px --> 767px)
         margin: 15px 20px;
     }
     
-    #hotelpop div {
+/*    #hotelpop div {*/
+        
+    #hotelpop [div^="choix"]{
         width: 200px;
     }
     
@@ -712,7 +709,9 @@ BreakPoint: (480px --> 767px)
         height: auto;
     }
     
-    .wrapper figure div {
+/*    .wrapper figure div {*/
+        
+    .wrapper figure [div^="choix"] {
         height: 200px;
     }
       
@@ -757,7 +756,8 @@ BreakPoint: (480px --> 767px)
         margin-left:10px;
     }
     
-    footer div{
+/*    footer div{*/
+    .footer-block{
             padding: 0 20%;
     }
 
@@ -939,7 +939,7 @@ BreakPoint: (480px)
      .navSearch {
         display: flex;
         border: 1px solid #f2f2f2;
-        border-radius: 20px;
+/*        border-radius: 20px;*/
 /*        width: calc( 100% - 100px );*/
         width: calc( 100% - 120px );
         border-left: none;
