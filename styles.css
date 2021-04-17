@@ -1,4 +1,3 @@
-
 body {
     margin :0px;
     font-family: 'Raleway', sans-serif;
@@ -10,12 +9,12 @@ a {
     color: blue;
 }
 
-header{
+header {
    padding : 0 40px;
 }
 
   
-.container1{
+.container1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,11 +29,10 @@ header{
 .desktop {
     display: block;   
     font-weight :bold; 
-/*    color: blue;*/
     font-size: 1.2em; 
 }
 
-.elementlogo{
+.elementlogo {
     padding-top: 30px;
 }
 
@@ -44,19 +42,19 @@ header{
 /**************** nav*************/
 
 
-ul{
+ul {
     display: flex;  
     flex-wrap: wrap;
     padding: 0 20px;
 }
 
-.topnav{  
+.topnav {  
     list-style-type: none;
     font-size: 1em; 
     align-items: baseline;
 }
 
-.topnav li{
+.topnav li {
     padding:50px 40px;
     text-align: center;
     padding-bottom: 10px;
@@ -69,15 +67,15 @@ ul{
 }
 
 
-.topnav :hover{
+.topnav :hover {
     color: blue;    
 }
 
-.topnav li:nth-child(-n+2):hover{
+.topnav li:nth-child(-n+2):hover {
         border-top:2px solid #0065FC;  
 }
 
-.topnav li:last-child a{
+.topnav li:last-child a {
     color: blue;
     padding-right: 0;
 }
@@ -98,7 +96,7 @@ ul{
 }
 
 
-.navSearch > i{
+.navSearch > i {
     outline: none;
     flex-basis: auto;
     border: 1px solid #F2F2F2;
@@ -120,7 +118,7 @@ ul{
     position: absolute;
 }
 
-.writing{
+.writing {
     top: 0;
     left: 0;
     height: 48px;
@@ -146,23 +144,22 @@ input#Search {
 }
 
 
-.fa-map-marker-alt{
+.fa-map-marker-alt {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color:#F2F2F2;
-    
+    background-color:#F2F2F2;  
 }
 
  
 /*------------------------------------*/
 
-div .filtres{
+div .filtres {
     display:flex; 
     align-items: baseline;
     flex-wrap: wrap;
 }
 
-.filtres ul{
+.filtres ul {
         display: flex;  
         flex-wrap: wrap;
 /*        padding: 0 20px;*/
@@ -214,7 +211,7 @@ div .filtres{
 }
 
 
-#info i{
+#info i {
     color: #0065FC;
     background-color: #F2F2F2;
     border: 2px solid #F2F2F2;
@@ -229,23 +226,23 @@ div .filtres{
 
 
 /****MAIN : section + aside ***************************************/
-main{
+main {
     margin: 0 10px;
     padding: 0 20px;    
     flex-direction: column;
 }
 
-#hebergement, aside{
+#hebergement, aside {
     background-color:  #F2F2F2;   
 }
 
-.hebergement{
+.hebergement {
     display: flex;
     flex-wrap: wrap-reverse;
 }
 
 
-#hebergement{
+#hebergement {
     border:1px solid #F2F2F2; 
     flex : 2;
     padding : 10px 20px;
@@ -254,37 +251,36 @@ main{
 }
 
 
-section>h3{
+/*
+section>.title3{
     padding-top:15px;
     padding-left: 15px;
 }
+*/
 
-#hotel{
+#hotel {
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
 }
 
-.flyover{
+.flyover {
     width: calc( 33% - 20px );
     margin:20px 10px;
 }
 
-#hebergement figure{    
+#hebergement figure {    
     border: 7px solid white;
     box-sizing:border-box;
-/*    width: 28%;    */
-
     overflow: hidden;
 /*    min-width: 200px;*/  
-/*    margin:20px;*/
     border-radius: 25px;
     background-color: white;
     box-shadow: 0px 0px 10px #aaa; 
     margin:0;
 }
 
-#hotel div{ 
+#hotel [id^="choix"] {
     width: 100%;
     height: 110px;
     background-position: center;
@@ -348,7 +344,7 @@ background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash
 }
 
 
-#hebergement figcaption{
+#hebergement figcaption {
     text-align: left;
     padding-left: 10px;
     height: 100px;
@@ -357,7 +353,7 @@ background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash
     color:black;    
 }
 
-.fa-star{
+.fa-star {
     color:#0065FC;
     margin-bottom: 25px;
 }
@@ -370,18 +366,18 @@ background-image: url(images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash
     color:slategray;
 }
 
-aside{  
+aside {  
     flex : 1;
     border:1px solid #F2F2F2; 
     margin: 10px 10px 10px 30px;
     border-radius: 35px;
 }
 
-aside h2{
+aside .title2 {
     padding: 20px 35px;
 }
 
-aside figure{
+aside figure {
     display:flex;
     border: 7px solid white;
     box-sizing:border-box;
@@ -400,11 +396,12 @@ aside figure{
     margin-right: 0px;
 }
 
-#hotelpop{   
+#hotelpop {   
     margin:15px 30px;        
 }
 
-#hotelpop div{ 
+/*#hotelpop div{ */
+#hotelpop [id^="choix"] {
     height: 100%;
     width: 120px;
     background-position: center;
@@ -412,26 +409,26 @@ aside figure{
 }
 
 
-aside figcaption{
+aside figcaption {
     margin: 0 10px;    
     font-size: 0.9em;
     width: 150px;
     flex: 1 1 0;
 }
 
-aside figcaption :last-child{
+aside figcaption :last-child {
     margin-top: 25px;
 }
 
 
 /***************SECTION ACTIVITES**************/
 
-#activites>h2{
+#activites>.title2 {
     margin-bottom: 10px;
     padding-left: 10px;
 }
 
-section h2{
+section .title2 {
     padding: 20px 30px;
 }
 
@@ -449,7 +446,7 @@ section h2{
 }
 
 
-.wrapper{
+.wrapper {
     margin:0 10px;
     display: flex;
   
@@ -460,7 +457,7 @@ section h2{
 }
 
 
-.column{
+.column {
    height: 100%;
    width: 22%;
    display: flex;
@@ -469,32 +466,33 @@ section h2{
 }
  
 
-.col-1{
+.col-1 {
     height:34%;
 }
-.col-2{
+.col-2 {
     height:47%;
 }
-.col-3{
+.col-3 {
     height:60%;
 }
-.col-4{
+.col-4 {
     height: 100%;
 }
 
-#activites h3{
+#activites .title3 {
     margin-left: 10px;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 15px;
 }
 
-.wrapper figure div{ 
+/*.wrapper figure div{ */
+.wrapper [id^='choix'] {   
     height: calc( 100% - 50px );
     background-position: center;
     background-size: cover;    
 }
 
-#activites figcaption{
+#activites figcaption {
     text-align: left;
     padding-left: 10px;
     height: 50px;
@@ -508,7 +506,7 @@ section h2{
     
 }
 
-figure:hover{
+figure:hover {
      transform: scale(1.05);
 }
 
@@ -520,16 +518,15 @@ FOOTER
 ****
 ****/
 
-footer{
+footer {
      background-color:  #F2F2F2;
      display: flex;
      flex-wrap: wrap;
      padding: 20px 40px;        
 }
 
-.footer-block{
+.footer-block {
     flex:1 1 200px;
-    padding-left: 10px;
 }
 
 
@@ -554,11 +551,11 @@ BreakPoint: (768px --> 1280px)
 /*@media screen and (min-width: 768px) and (max-width: 1280px){*/
     
 @media screen and (min-width: 1024px) and (max-width: 1280px){
-    .wrapper{
+    .wrapper {
         height: 500px;
     }
     
-    .flyover{
+    .flyover {
         width: calc( 50% - 20px );
     }
 
@@ -634,7 +631,7 @@ BreakPoint: (1024px)
         flex: 1 0 200px;
     }
     
-    .flyover{
+    .flyover {
         width: 90%;
     }
 }
@@ -648,40 +645,31 @@ BreakPoint: (480px --> 767px)
 
 
 @media screen and (min-width: 480px) and (max-width: 768px){
-
-/*@media screen and (max-width: 768px){*/
          
-    .headerlogo{
+    .headerlogo {
         padding-bottom: 31px;
     }  
     
-     ul{
+     ul {
         display: flex;  
         flex-wrap: wrap;
         padding: 0px;
     }
 
-    .topnav{
+    .topnav {
         font-size: 0.9em;
     }
     
-    .topnav li{
+    .topnav li {
         padding:50px 5px;
     }
-    
-    
-/*
-    input[type="text" i] {
-        width: calc( 100% -150px);
-    }
-*/
    
     figure {
         height: 250px;
     }
     
     
-    main{
+    main {
         margin:0;
         padding:0;
     }
@@ -690,7 +678,7 @@ BreakPoint: (480px --> 767px)
         margin:10px;
     }
     
-    aside h2 {
+    aside .title2 {
         padding: 20px;
         padding-bottom: 0px;
     }
@@ -701,7 +689,7 @@ BreakPoint: (480px --> 767px)
     
 /*    #hotelpop div {*/
         
-    #hotelpop [div^="choix"]{
+    #hotelpop [id^="choix"] {
         width: 200px;
     }
     
@@ -710,17 +698,16 @@ BreakPoint: (480px --> 767px)
     }
     
 /*    .wrapper figure div {*/
-        
-    .wrapper figure [div^="choix"] {
+    .wrapper [id^='choix'] {
         height: 200px;
     }
       
-    .column{
+    .column {
         width: 100%;
         height: fit-content;    
     }
      
-    #hebergement{
+    #hebergement {
         flex:auto;     
     }
     
@@ -735,13 +722,13 @@ BreakPoint: (480px --> 767px)
         width: calc( 45% - 5px );
         margin: 20px 0px;
     }
-    
-    section h2{
+     
+    section .title2 {
         margin: 0px;
         padding: 20px 0px;
     }
     
-    #hebergement figure{
+    #hebergement figure {
 /*        margin:20px;*/
 /*        flex: 1 0 300px;*/
        
@@ -752,12 +739,11 @@ BreakPoint: (480px --> 767px)
     }  
     
    
-    #activites>h2 {
+    #activites>.title2 {
         margin-left:10px;
     }
     
-/*    footer div{*/
-    .footer-block{
+    .footer-block {
             padding: 0 20%;
     }
 
@@ -825,18 +811,15 @@ BreakPoint: (480px)
 
 
 @media screen and (max-width: 480px){
-    body {
-    margin :0px;
-    }
     
-    header{
+    header {
         padding:0;
     }
-    .container1{ 
+    .container1 { 
         flex-wrap: wrap;
     }  
     
-    .mobile.inscription{
+    .mobile.inscription {
             margin-top: 60px;
     }
     
@@ -875,7 +858,7 @@ BreakPoint: (480px)
     }
 
     
-    .topnav li{
+    .topnav li {
         padding:0;
         width: 50%;
         text-align: center;
@@ -888,7 +871,7 @@ BreakPoint: (480px)
     }
     
 
-    .topnav li:hover{
+    .topnav li:hover {
         border-bottom-color: blue;
         border-top:none;       
     }       
@@ -898,33 +881,33 @@ BreakPoint: (480px)
         margin-left:10px;      
     }
     
-    .elementlogo{
+    .elementlogo {
         margin-left:10px;
         margin-top: 10px;
         padding-right: 0px;
     }
        
-    header h2{
+    header .title2 {
         font-size: 1.4em;
          margin:20px
     }
     
-    header p{
+    header p {
         padding: 0 20px;
     }
     
-    .container1 h2{
+    .container1 .title2 {
         padding: 10px;   
     }
     
     /*===========================================*/
     /*-----------------navSearch----------------*/
     
-    #Search{
+    #Search {
         display: none;
     }
     
-    .fa-search{
+    .fa-search {
         color:white;
         background-color:#0065FC;
         border-radius: 15px;
@@ -939,8 +922,6 @@ BreakPoint: (480px)
      .navSearch {
         display: flex;
         border: 1px solid #f2f2f2;
-/*        border-radius: 20px;*/
-/*        width: calc( 100% - 100px );*/
         width: calc( 100% - 120px );
         border-left: none;
         border-right: none;
@@ -959,7 +940,7 @@ BreakPoint: (480px)
         display:none;
     }
     
-    fa-search{
+    fa-search {
         width: 16px;
         position: absolute;
         height: 18px;
@@ -968,40 +949,40 @@ BreakPoint: (480px)
  
     /*------------------------------------*/
   
-    div filtres{
+    div filtres {
         flex: none;
     }
     
-    .filtres h2{
+    .filtres .title2 {
          width: 100%;    
     }
     
-    div .filtres{
+    div .filtres {
         display: block;
         padding-left: 20px;     
     }
     
-    ul{
+    ul {
         padding-left: 0px;
         display: flex;
         flex-wrap: wrap;
     }
     
-    #filtres ul li{
+    #filtres ul li {
         margin:0;
         margin-right: 15px;
         margin-bottom: 15px;
     }   
     
-    #info{
+    #info {
         margin:0 20px;
     }
     
-    #info p{
+    #info p {
         padding: 0 1px;
     }
     
-    main{
+    main {
         margin:0;
         padding:0;
     }
@@ -1011,7 +992,7 @@ BreakPoint: (480px)
         margin:0;
     }
     
-    aside h2 {
+    aside .title2 {
         padding: 20px;
         padding-bottom: 0px;
     }
@@ -1020,7 +1001,7 @@ BreakPoint: (480px)
         margin: 15px 20px;
     }
 
-    #activites{
+    #activites {
         display: flex;
         flex-direction: column;
     }    
@@ -1030,28 +1011,29 @@ BreakPoint: (480px)
          margin-bottom: 30px;
     }
     
-    #activite>h2{
+    #activite>.title2 {
         margin-bottom: 30px;
         padding-left: 20px;  
     }
     
-    .wrapper{
+    .wrapper {
         margin:0 20px;
         height: 0%;
         flex-wrap:wrap;      
     }  
     
-    .wrapper figure div {
+    
+     .wrapper [id^='choix'] {
         height: 200px;
         background-position: center;
         background-size: cover;
     }
       
-    .column{
+    .column {
         width: 100%;    
     }
     
-    #hebergement{  
+    #hebergement {  
         padding:0;
         background-color: white;
 /*        margin:20px;*/
@@ -1059,27 +1041,27 @@ BreakPoint: (480px)
         margin:0;
     }
     
-    .flyover{
+    .flyover {
         width: 90%;
         margin:10px 15px;
     }
     
-    #hebergement figure{
+    #hebergement figure {
         margin:10px 0;
         flex: 1 0 230px;
     }
     
-    section h2{
+    section .title2 {
         margin: 0px;
 /*        padding: 20px 35px;*/
         padding:20px;
     }
     
-    section>h3{     
+    section>.title3 {     
         padding-left: 20px;
     }
     
-    #activites>h2{
+    #activites>.title2 {
         margin-left:10px;
     }  
     
@@ -1127,6 +1109,10 @@ BreakPoint: (480px)
     }
     #choix15{
     background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    }
+    
+    footer {
+         padding: 20px 30px;        
     }
 
 }
