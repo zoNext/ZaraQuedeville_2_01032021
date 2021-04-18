@@ -921,20 +921,11 @@ BreakPoint: (480px)
 
      .navSearch {
         display: flex;
-        border: 1px solid #f2f2f2;
         width: calc( 100% - 120px );
-        border-left: none;
-        border-right: none;
         margin-left: 75px;
         min-width: 0;
     }
 
-
-    .navSearch > i, input {
-        outline: none;
-        flex-basis: auto;
-    }
-    
     
     input#Search {
         display:none;
