@@ -12,14 +12,12 @@ a {
 header {
    padding : 0 40px;
 }
-
   
 .container1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 /*======== Logo ===========*/
 
@@ -35,7 +33,6 @@ header {
 .elementlogo {
     padding-top: 30px;
 }
-
     
 
 /*===================================*/
@@ -66,7 +63,6 @@ ul {
     padding-top: calc( 40px + 1em + 10px - 1px ); 
 }
 
-
 .topnav :hover {
     color: blue;    
 }
@@ -94,7 +90,6 @@ ul {
     height: 48px;
     min-width: 200px;
 }
-
 
 .navSearch > i {
     outline: none;
@@ -143,7 +138,6 @@ input#Search {
     top: -1px;
 }
 
-
 .fa-map-marker-alt {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -162,9 +156,8 @@ div .filtres {
 .filtres ul {
         display: flex;  
         flex-wrap: wrap;
-/*        padding: 0 20px;*/
-    }
 
+}
 
 #filtres ul li {
     list-style-type: none;
@@ -185,8 +178,7 @@ div .filtres {
 }
 
 #filtres ul li:hover{
-    background-color: #DEEBFF; 
-;
+    background-color: #DEEBFF;
 }
 
 #filtres ul li i {
@@ -209,7 +201,6 @@ div .filtres {
     align-items: baseline;
     color:gray;
 }
-
 
 #info i {
     color: #0065FC;
@@ -251,13 +242,6 @@ main {
 }
 
 
-/*
-section>.title3{
-    padding-top:15px;
-    padding-left: 15px;
-}
-*/
-
 #hotel {
     display: flex;
     flex-wrap: wrap;
@@ -273,7 +257,6 @@ section>.title3{
     border: 7px solid white;
     box-sizing:border-box;
     overflow: hidden;
-/*    min-width: 200px;*/  
     border-radius: 25px;
     background-color: white;
     box-shadow: 0px 0px 10px #aaa; 
@@ -322,7 +305,6 @@ background-image: url(images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-u
 #choix10{
 background-image: url(images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
 }
-
 
 #choix11{
 background-image: url(images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
@@ -385,7 +367,7 @@ aside figure {
     overflow: hidden;
     border-radius: 20px;
     background-color: white;
-    margin:30px 0px;  
+    margin:20px 0px;  
     box-shadow: 0px 0px 10px #aaa; 
     color:black;
 }
@@ -400,14 +382,12 @@ aside figure {
     margin:15px 30px;        
 }
 
-/*#hotelpop div{ */
 #hotelpop [id^="choix"] {
     height: 100%;
     width: 120px;
     background-position: center;
     background-size: cover;
 }
-
 
 aside figcaption {
     margin: 0 10px;    
@@ -445,7 +425,6 @@ section .title2 {
     margin: 0;    
 }
 
-
 .wrapper {
     margin:0 10px;
     display: flex;
@@ -455,7 +434,6 @@ section .title2 {
     justify-content: space-between;
     padding-bottom: 50px;
 }
-
 
 .column {
    height: 100%;
@@ -485,7 +463,6 @@ section .title2 {
     line-height: 15px;
 }
 
-/*.wrapper figure div{ */
 .wrapper [id^='choix'] {   
     height: calc( 100% - 50px );
     background-position: center;
@@ -502,8 +479,7 @@ section .title2 {
     position: absolute;
     bottom: 0;
     width: calc( 100% - 10px );
-    background: white;    
-    
+    background: white;       
 }
 
 figure:hover {
@@ -529,15 +505,9 @@ footer {
     flex:1 1 200px;
 }
 
-
-.mobile {
-/*    display: none;*/
-}
 .desktop {
     display: block;
 }
-
-
 
 
 
@@ -548,7 +518,6 @@ BreakPoint: (768px --> 1280px)
 ****
 ****/
 
-/*@media screen and (min-width: 768px) and (max-width: 1280px){*/
     
 @media screen and (min-width: 1024px) and (max-width: 1280px){
     .wrapper {
@@ -594,11 +563,9 @@ BreakPoint: (768px --> 1280px)
     background-image: url(images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
 
-
     #choix11{
     background-image: url(images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
-
 
     #choix12{
     background-image: url(images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
@@ -620,11 +587,10 @@ BreakPoint: (768px --> 1280px)
 
 /****
 *****
-BreakPoint: (1024px)
+BreakPoint: (769px ---> 1024px)
 ****
 ****/
 
-/*@media screen and (max-width: 1024px){*/
     
 @media screen and (min-width: 769px) and (max-width: 1024px){
     #hebergement figure {
@@ -639,7 +605,7 @@ BreakPoint: (1024px)
 
 /****
 *****
-BreakPoint: (480px --> 767px)
+BreakPoint: (480px --> 768px)
 ****
 ****/
 
@@ -668,7 +634,6 @@ BreakPoint: (480px --> 767px)
         height: 250px;
     }
     
-    
     main {
         margin:0;
         padding:0;
@@ -686,8 +651,6 @@ BreakPoint: (480px --> 767px)
     #hotelpop {
         margin: 15px 20px;
     }
-    
-/*    #hotelpop div {*/
         
     #hotelpop [id^="choix"] {
         width: 200px;
@@ -697,7 +660,6 @@ BreakPoint: (480px --> 767px)
         height: auto;
     }
     
-/*    .wrapper figure div {*/
     .wrapper [id^='choix'] {
         height: 200px;
     }
@@ -717,8 +679,6 @@ BreakPoint: (480px --> 767px)
     }
     
     .flyover {
-/*        width: 100%;*/
-/*        width: 30%;*/
         width: calc( 45% - 5px );
         margin: 20px 0px;
     }
@@ -727,17 +687,11 @@ BreakPoint: (480px --> 767px)
         margin: 0px;
         padding: 20px 0px;
     }
-    
-    #hebergement figure {
-/*        margin:20px;*/
-/*        flex: 1 0 300px;*/
-       
-    }   
+     
      #activites figure {
         margin:10px;
         height: auto;
     }  
-    
    
     #activites>.title2 {
         margin-left:10px;
@@ -768,7 +722,6 @@ BreakPoint: (480px --> 767px)
     #choix7{
     background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     }
-
     #choix8{
     background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
     }
@@ -787,7 +740,6 @@ BreakPoint: (480px --> 767px)
     #choix13{
     background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     }
-
     #choix14{
     background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
@@ -823,7 +775,6 @@ BreakPoint: (480px)
             margin-top: 60px;
     }
     
-    
     .mobile {
         display: inline-block;
         font-weight: bold;
@@ -833,13 +784,11 @@ BreakPoint: (480px)
 
     .desktop {
         display: none;
-    }       
+    } 
+    
     .elementlogo {
         margin-left: 0px;
-        margin-top: 10px;
-        padding-right: 0;
     }        
-   
     
     .element {
         display: flex;
@@ -856,7 +805,6 @@ BreakPoint: (480px)
         margin-right: 0;
         width: 100%;
     }
-
     
     .topnav li {
         padding:0;
@@ -869,7 +817,6 @@ BreakPoint: (480px)
      .topnav li:nth-child(-n+2):hover { 
         border-top:none;
     }
-    
 
     .topnav li:hover {
         border-bottom-color: blue;
@@ -925,7 +872,6 @@ BreakPoint: (480px)
         margin-left: 75px;
         min-width: 0;
     }
-
     
     input#Search {
         display:none;
@@ -938,7 +884,7 @@ BreakPoint: (480px)
         bottom: -1px;
     }
  
-    /*------------------------------------*/
+    /*---------------Filtres------------------*/
   
     div filtres {
         flex: none;
@@ -977,6 +923,7 @@ BreakPoint: (480px)
         margin:0;
         padding:0;
     }
+    
     aside {
         width: 100%;
         border-radius: 0;
@@ -999,7 +946,7 @@ BreakPoint: (480px)
     
      #activites figure {
          height: auto;
-         margin-bottom: 30px;
+         margin-bottom: 20px;
     }
     
     #activite>.title2 {
@@ -1012,7 +959,6 @@ BreakPoint: (480px)
         height: 0%;
         flex-wrap:wrap;      
     }  
-    
     
      .wrapper [id^='choix'] {
         height: 200px;
@@ -1027,14 +973,13 @@ BreakPoint: (480px)
     #hebergement {  
         padding:0;
         background-color: white;
-/*        margin:20px;*/
         border: none;
         margin:0;
     }
     
     .flyover {
         width: 90%;
-        margin:10px 15px;
+        margin: 0px 15px;
     }
     
     #hebergement figure {
@@ -1044,7 +989,6 @@ BreakPoint: (480px)
     
     section .title2 {
         margin: 0px;
-/*        padding: 20px 35px;*/
         padding:20px;
     }
     
@@ -1087,7 +1031,7 @@ BreakPoint: (480px)
     background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     }
     #choix11{
-       background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     }
     #choix12{
     background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
