@@ -152,11 +152,6 @@ div .filtres {
     flex-wrap: wrap;
 }
 
-.filtres ul {
-    display: flex;  
-    flex-wrap: wrap;
-
-}
 
 #filtres ul li {
     list-style-type: none;
@@ -214,7 +209,7 @@ div .filtres {
 }
 
 
-/****MAIN : section + aside ***************************************/
+/****MAIN : div (section + aside) ***************************************/
 main {
     margin: 0 10px;
     padding: 0 20px;    
@@ -669,10 +664,12 @@ BreakPoint: (480px --> 768px)
         flex:auto;     
     }
 
+/*
     .hebergement {
         display: flex;
         flex-wrap: wrap-reverse;
     }
+*/
 
     .flyover {
         width: calc( 45% - 5px );
@@ -893,13 +890,7 @@ BreakPoint: (480px)
         padding-left: 20px;     
     }
 
-    ul {
-        padding-left: 0px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #filtres ul li {
+     #filtres ul li {
         margin:0;
         margin-right: 15px;
         margin-bottom: 15px;
